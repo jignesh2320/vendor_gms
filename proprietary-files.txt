@@ -1,0 +1,112 @@
+# Auto
+-product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk;PRESIGNED
+
+# Browser
+-product/app/Chrome-Stub/Chrome-Stub.apk;OVERRIDES=Browser2,ChromePublic,Jelly;PRESIGNED
+-product/app/TrichromeLibrary-Stub/TrichromeLibrary-Stub.apk;PRESIGNED
+-product/app/WebViewGoogle-Stub/WebViewGoogle-Stub.apk;PRESIGNED
+product/app/Chrome/Chrome.apk.gz
+product/app/TrichromeLibrary/TrichromeLibrary.apk.gz
+product/app/WebViewGoogle/WebViewGoogle.apk.gz
+
+# Calculator
+-product/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk;OVERRIDES=ExactCalculator;PRESIGNED
+
+# Calendar
+-product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk;OVERRIDES=Calendar,Etar;PRESIGNED
+
+# Clock
+-product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk;OVERRIDES=DeskClock;PRESIGNED
+
+# Config
+product/etc/preferred-apps/google.xml
+product/etc/sysconfig/google_build.xml
+product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
+product/etc/sysconfig/google.xml
+product/etc/sysconfig/nexus.xml
+product/etc/sysconfig/pixel_experience_2017.xml
+product/etc/sysconfig/pixel_experience_2018.xml
+product/etc/sysconfig/pixel_experience_2019_midyear.xml
+product/etc/sysconfig/pixel_experience_2019.xml
+product/etc/sysconfig/pixel_experience_2020_midyear.xml
+product/etc/sysconfig/pixel_experience_2020.xml
+
+# Device Personalization Services
+-product/priv-app/DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk;PRESIGNED
+
+# Files
+-product/priv-app/FilesPrebuilt/FilesPrebuilt.apk;PRESIGNED
+-priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk;OVERRIDES=DocumentsUI;PRESIGNED
+
+# Google Sans
+product/fonts/GoogleSans-Bold.ttf
+product/fonts/GoogleSans-BoldItalic.ttf
+product/fonts/GoogleSans-Italic.ttf
+product/fonts/GoogleSans-Medium.ttf
+product/fonts/GoogleSans-MediumItalic.ttf
+product/fonts/GoogleSans-Regular.ttf
+
+# Google search
+-product/priv-app/Velvet/Velvet.apk;OVERRIDES=QuickSearchBox;PRESIGNED
+
+# Gmail
+-product/app/PrebuiltGmail/PrebuiltGmail.apk;OVERRIDES=Email;PRESIGNED
+
+# Google Play
+-app/GoogleExtShared/GoogleExtShared.apk;OVERRIDES=ExtShared;PRESIGNED
+-product/priv-app/ConfigUpdater/ConfigUpdater.apk;PRESIGNED
+-product/priv-app/Phonesky/Phonesky.apk;PRESIGNED
+-product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk;PRESIGNED
+-product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreRvc.apk:product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk;PRESIGNED
+-system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk;PRESIGNED
+-system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk;PRESIGNED
+
+# Keyboard
+-product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk;OVERRIDES=LatinIME;PRESIGNED
+
+# Location
+-product/app/LocationHistoryPrebuilt/LocationHistoryPrebuilt.apk;PRESIGNED
+-product/app/Maps/Maps.apk;PRESIGNED
+
+# PackageInstaller
+-priv-app/GooglePackageInstaller/GooglePackageInstaller.apk;OVERRIDES=PackageInstaller;PRESIGNED
+
+# Permissions
+etc/permissions/privapp-permissions-google.xml
+product/etc/permissions/com.google.android.dialer.support.xml
+product/etc/permissions/split-permissions-google.xml
+product/etc/permissions/privapp-permissions-google-p.xml
+system_ext/etc/permissions/privapp-permissions-google-se.xml
+
+# Phone
+-product/app/GoogleContacts/GoogleContacts.apk;OVERRIDES=Contacts;PRESIGNED
+-product/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk;PRESIGNED
+-product/app/PrebuiltBugle/PrebuiltBugle.apk;OVERRIDES=messaging;PRESIGNED
+-product/priv-app/GoogleDialer/GoogleDialer.apk;OVERRIDES=Dialer;PRESIGNED
+-product/framework/com.google.android.dialer.support.jar;PRESIGNED
+
+# Pixel launcher
+-system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk;OVERRIDES=Launcher3QuickStep,TrebuchetQuickStep;PRESIGNED
+
+# Photo/Video
+-product/app/MarkupGoogle/MarkupGoogle.apk;PRESIGNED
+-product/app/Photos/Photos.apk;OVERRIDES=Gallery2,PhotoTable,SnapdragonGallery;PRESIGNED
+product/lib64/libsketchology_native.so
+
+# Print
+-app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk;OVERRIDES=PrintRecommendationService;PRESIGNED
+
+# Setup
+-product/priv-app/AndroidMigratePrebuilt/AndroidMigratePrebuilt.apk;PRESIGNED
+-product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk;PRESIGNED
+-product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk;PRESIGNED
+-system_ext/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk;OVERRIDES=OneTimeInitializer;PRESIGNED
+
+# Turbo
+-product/priv-app/TurboPrebuilt/TurboPrebuilt.apk;PRESIGNED
+
+# Voice
+-product/app/GoogleTTS/GoogleTTS.apk;PRESIGNED
+
+# Wellbeing
+-product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk;PRESIGNED
