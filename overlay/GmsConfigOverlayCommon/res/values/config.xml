@@ -43,9 +43,6 @@
     <!-- Default autofill service to enable [DO NOT TRANSLATE] -->
     <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
 
-    <!-- Flag indicating which package name can access DeviceConfig table [DO NOT TRANSLATE] -->
-    <string name="config_deviceConfiguratorPackageName" translatable="false">com.google.android.gms</string>
-
     <!-- Component name that should be granted Notification Assistant access -->
     <!-- This configuration is provided by the Mainline module distribution -->
 
