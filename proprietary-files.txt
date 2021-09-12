@@ -77,6 +77,9 @@ product/etc/sysconfig/pixel_experience_2020.xml
 system/etc/permissions/privapp-permissions-google.xml
 system_ext/etc/permissions/privapp-permissions-google-se.xml
 
+# Config - from marlin QP1A.191005.007.A3
+product/etc/sysconfig/pixel_2016_exclusive.xml|f4eeeeec14b22b913d865ba5895dcca9f0214f57
+
 # Pixel application packages
 -product/app/MarkupGoogle/MarkupGoogle.apk;PRESIGNED
 -product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk;PRESIGNED
