@@ -7,10 +7,10 @@
 # Overlay
 PRODUCT_PACKAGES += \
     ContactsProviderOverlay \
-    DocumentsUIOverlay \
     FontGoogleSansOverlay \
     GmsConfigOverlayCommon \
     NexusLauncherOverlay \
+    PixelDocumentsUIGoogleOverlay \
     TurboOverlay
 
 # SetupWizard
