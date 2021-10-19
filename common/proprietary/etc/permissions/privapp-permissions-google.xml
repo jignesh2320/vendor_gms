@@ -40,9 +40,6 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.PACKAGE_USAGE_STATS" />
         <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
         <permission name="android.permission.MODIFY_AUDIO_ROUTING" />
-
-        <!-- for permission 2 hub debugging only -->
-        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.packageinstaller">
@@ -85,6 +82,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <!-- Permissions required for reading and logging compat changes -->
         <permission name="android.permission.LOG_COMPAT_CHANGE"/>
         <permission name="android.permission.READ_COMPAT_CHANGE_CONFIG"/>
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.providers.media.module">
@@ -99,6 +97,12 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.LOG_COMPAT_CHANGE" />
         <permission name="android.permission.READ_COMPAT_CHANGE_CONFIG" />
         <permission name="android.permission.REGISTER_STATS_PULL_ATOM" />
+        <!-- Permissions required for reading DeviceConfig -->
+        <permission name="android.permission.READ_DEVICE_CONFIG" />
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+        <permission name="android.permission.MODIFY_QUIET_MODE"/>
+        <!-- Permissions required to check if an app is in the foreground or not during IO -->
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.networkstack.tethering">
@@ -112,13 +116,14 @@ It allows additional grants on top of privapp-permissions-platform.xml
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.cellbroadcastreceiver">
+        <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.MANAGE_USERS"/>
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.MODIFY_CELL_BROADCASTS"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.RECEIVE_EMERGENCY_BROADCAST"/>
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
-        <permission name="android.permission.STATUS_BAR" />
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.cellbroadcastservice">

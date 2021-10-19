@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/gms/common/proprietary/product/etc/sysconfig/pixel_experience_2020_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2020_midyear.xml \
     vendor/gms/common/proprietary/product/fonts/GoogleSans-Italic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/GoogleSans-Italic.ttf \
     vendor/gms/common/proprietary/product/fonts/GoogleSans-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/GoogleSans-Regular.ttf \
-    vendor/gms/common/proprietary/product/lib64/libsketchology_native.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsketchology_native.so \
     vendor/gms/common/proprietary/system_ext/etc/permissions/privapp-permissions-google-se.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-se.xml
 
 PRODUCT_PACKAGES += \
@@ -45,27 +44,26 @@ PRODUCT_PACKAGES += \
     Maps \
     MarkupGoogle \
     Photos \
-    PrebuiltBugle \
     PrebuiltDeskClockGoogle \
     PrebuiltGmail \
     TrichromeLibrary-Stub \
     WebViewGoogle-Stub \
     AndroidAutoStubPrebuilt \
-    AndroidMigratePrebuilt \
     ConfigUpdater \
     DevicePersonalizationPrebuiltPixel2020 \
     FilesPrebuilt \
     GoogleDialer \
+    GoogleOneTimeInitializer \
     PartnerSetupPrebuilt \
     Phonesky \
-    PrebuiltGmsCore \
+    PrebuiltBugle \
+    PrebuiltGmsCoreSc \
     AndroidPlatformServices \
     SetupWizardPrebuilt \
     TurboPrebuilt \
     Velvet \
     WellbeingPrebuilt \
     GoogleFeedback \
-    GoogleOneTimeInitializer \
     GoogleServicesFramework \
     NexusLauncherRelease \
     com.google.android.dialer.support
