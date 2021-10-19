@@ -9,4 +9,7 @@ runtime_resource_overlay {
     product_specific: true,
     resource_dirs: ["res"],
     sdk_version: "current",
+    static_libs: [
+        "com.google.android.material_material",
+    ],
 }
