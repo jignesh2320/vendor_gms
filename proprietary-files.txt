@@ -39,11 +39,7 @@ product/etc/sysconfig/pixel_experience_2020.xml
 -priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk;OVERRIDES=DocumentsUI;PRESIGNED
 
 # Google Sans
-product/fonts/GoogleSans-Bold.ttf
-product/fonts/GoogleSans-BoldItalic.ttf
 product/fonts/GoogleSans-Italic.ttf
-product/fonts/GoogleSans-Medium.ttf
-product/fonts/GoogleSans-MediumItalic.ttf
 product/fonts/GoogleSans-Regular.ttf
 
 # Google search

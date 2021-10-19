@@ -21,7 +21,7 @@ fonts_customization_merged := $(TARGET_OUT_PRODUCT_ETC)/fonts_customization.merg
 fonts_customization_google-sans := $(TARGET_OUT_PRODUCT_ETC)/fonts_customization.google-sans.xml
 
 $(fonts_customization_merged): $(fonts_customization) $(fonts_customization_google-sans)
-	(head -n -1 fonts_customization.xml; echo ""; tail -n +3 fonts_customization.google-sans.xml) > fonts_customization.merged.xml
+	(head -n -1 fonts_customization.xml; echo ""; tail -n +2 fonts_customization.google-sans.xml) > fonts_customization.merged.xml
 	mv $(fonts_customization_merged) $(fonts_customization)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(fonts_customization_merged)
