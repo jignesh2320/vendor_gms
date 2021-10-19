@@ -8,7 +8,6 @@
 PRODUCT_PACKAGES += \
     ContactsProviderOverlay \
     DocumentsUIOverlay \
-    FilesOverlay \
     FontGoogleSansOverlay \
     GmsConfigOverlayCommon \
     NexusLauncherOverlay \
