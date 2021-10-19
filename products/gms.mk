@@ -4,10 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-
 # Overlay
 PRODUCT_PACKAGES += \
-    AccentColorPixelBlue \
     ContactsProviderOverlay \
     DocumentsUIOverlay \
     FilesOverlay \
