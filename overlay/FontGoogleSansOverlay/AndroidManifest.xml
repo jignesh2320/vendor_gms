@@ -2,9 +2,7 @@
     package="com.android.theme.font.googlesans"
     android:versionCode="1"
     android:versionName="1.0">
-    <overlay android:targetPackage="android"
-        android:category="android.theme.customization.font"
-        android:priority="1"/>
+    <overlay android:targetPackage="android" android:category="android.theme.customization.font" android:priority="0" />
 
     <application android:label="@string/font_google_sans_overlay" android:hasCode="false">
         <meta-data

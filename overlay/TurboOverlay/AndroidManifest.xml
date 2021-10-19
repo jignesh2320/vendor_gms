@@ -2,10 +2,5 @@
     package="com.google.android.overlay.turbo"
     android:versionCode="1"
     android:versionName="1.0">
-
-    <overlay
-        android:targetPackage="com.android.settings"
-        android:priority="1"
-        android:isStatic="true"
-    />
+    <overlay android:targetPackage="com.android.settings" android:priority="0" android:isStatic="true" />
 </manifest>
