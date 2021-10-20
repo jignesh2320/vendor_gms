@@ -2,9 +2,6 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Package name of the required service extension package. -->
-    <string name="config_servicesExtensionPackage" translatable="false">com.google.android.ext.services</string>
-
     <!-- Package name for default keyguard appwidget [DO NOT TRANSLATE] -->
     <string name="widget_default_package_name" translatable="false">com.google.android.deskclock</string>
 
