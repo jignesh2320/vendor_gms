@@ -12,7 +12,7 @@
          Should only be used for core device functionality that must not be
          rendered inoperative for safety reasons, like the phone dialer and
          SMS handler. -->
-    <string-array name="config_nonBlockableNotificationPackages" translatable="false">
+    <string-array translatable="false" name="config_nonBlockableNotificationPackages">
         <item>com.google.android.deskclock:Firing</item>
         <item>com.google.android.setupwizard</item>
         <item>com.google.android.apps.pixelmigrate</item>
