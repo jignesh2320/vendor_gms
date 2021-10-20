@@ -13,6 +13,7 @@ PRODUCT_PACKAGES += \
     GmsConfigOverlayGeotz \
     GmsConfigOverlayGSA \
     GmsConfigOverlayPhotos \
+    GmsConfigOverlaySettings \
     GmsConfigOverlayTelecom \
     GmsConfigOverlayTeleService \
     GoogleConfigOverlay \
