@@ -54,6 +54,7 @@ PRODUCT_PACKAGES += \
     FilesPrebuilt \
     GoogleDialer \
     GoogleOneTimeInitializer \
+    GoogleRestorePrebuilt \
     PartnerSetupPrebuilt \
     Phonesky \
     PrebuiltBugle \
