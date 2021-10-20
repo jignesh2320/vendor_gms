@@ -15,6 +15,8 @@ PRODUCT_PACKAGES += \
     GmsConfigOverlayPhotos \
     GmsConfigOverlayTelecom \
     GmsConfigOverlayTeleService \
+    GoogleConfigOverlay \
+    LineageConfigOverlay \
     NexusLauncherOverlay \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
