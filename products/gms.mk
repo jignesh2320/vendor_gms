@@ -13,6 +13,7 @@ PRODUCT_PACKAGES += \
     GmsConfigOverlayGSA \
     GmsConfigOverlayPhotos \
     GmsConfigOverlaySettings \
+    GmsConfigOverlaySettingsProvider \
     GmsConfigOverlayTelecom \
     GmsConfigOverlayTeleService \
     TurboOverlay
