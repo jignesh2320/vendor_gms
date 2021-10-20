@@ -109,12 +109,6 @@
     -->
     <string name="config_defaultSmartspaceService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService</string>
 
-    <!-- The component name for the default profile supervisor, which can be set as a profile owner
-         even after user setup is complete. The defined component should be used for supervision purposes
-         only. The component must be part of a system app.
-    -->
-    <string name="config_defaultSupervisionProfileOwnerComponent" translatable="false">com.google.android.gms/.kids.account.receiver.ProfileOwnerReceiver</string>
-
     <!-- The component name for the system-wide captions manager service.
          This service must be trusted, as the system binds to it and keeps it running.
          Example: "com.android.captions/.SystemCaptionsManagerService"
