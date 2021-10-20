@@ -156,7 +156,4 @@
     <string-array name="config_accessibility_allowed_install_source" translatable="false">
         <item>com.android.vending</item>
     </string-array>
-
-    <string name="calendar_component_name" translatable="false">com.google.android.calendar/com.android.calendar.AllInOneActivity</string>
-    <string name="clock_component_name" translatable="false">com.google.android.deskclock/com.android.deskclock.DeskClock</string>
 </resources>
