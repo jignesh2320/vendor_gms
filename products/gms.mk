@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
     FontGoogleSansOverlay \
     GmsConfigOverlayCommon \
     GmsConfigOverlayComms \
+    GmsConfigOverlayGSA \
     NexusLauncherOverlay \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
