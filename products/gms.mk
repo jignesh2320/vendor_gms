@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
     NexusLauncherOverlay \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
+    PixelSetupWizardOverlay \
     TurboOverlay
 
 # SetupWizard
