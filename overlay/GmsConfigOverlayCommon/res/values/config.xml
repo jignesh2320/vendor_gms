@@ -156,4 +156,30 @@
     <string-array name="config_accessibility_allowed_install_source" translatable="false">
         <item>com.android.vending</item>
     </string-array>
+
+    <!-- Update the default behavior of power button to be compatible with that of previous Android
+         releases. If this behavior is not desired, change the value of the following three
+         configurations as needed.-->
+
+    <!-- Control the behavior when the user long presses the power button.
+            0 - Nothing
+            1 - Global actions menu
+            2 - Power off (with confirmation)
+            3 - Power off (without confirmation)
+            4 - Go to voice assist
+            5 - Go to assistant (Settings.Secure.ASSISTANT)
+    -->
+    <integer name="config_longPressOnPowerBehavior">1</integer>
+
+    <!-- Whether the setting to change long press on power behaviour from default to assistant (5)
+         is available in Settings.
+     -->
+    <bool name="config_longPressOnPowerForAssistantSettingAvailable">false</bool>
+
+    <!-- Control the behavior when the user presses the power and volume up buttons together.
+            0 - Nothing
+            1 - Mute toggle
+            2 - Global actions menu
+    -->
+    <integer name="config_keyChordPowerVolumeUp">0</integer>
 </resources>
