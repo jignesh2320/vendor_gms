@@ -9,6 +9,7 @@ PRODUCT_PACKAGES += \
     ContactsProviderOverlay \
     FontGoogleSansOverlay \
     GmsConfigOverlayCommon \
+    GmsConfigOverlayComms \
     NexusLauncherOverlay \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
