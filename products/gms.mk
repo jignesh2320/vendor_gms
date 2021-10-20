@@ -13,6 +13,7 @@ PRODUCT_PACKAGES += \
     GmsConfigOverlayGeotz \
     GmsConfigOverlayGSA \
     GmsConfigOverlayPhotos \
+    GmsConfigOverlayTeleService \
     NexusLauncherOverlay \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
