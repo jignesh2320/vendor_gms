@@ -81,6 +81,17 @@
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
     <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead</string>
 
+    <!-- Component name for the default module metadata provider on this device -->
+    <string name="config_defaultModuleMetadataProvider" translatable="false">com.google.android.modulemetadata</string>
+
+    <string name="config_defaultMusicRecognitionService" translatable="false">com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.service.SoundSearchService</string>
+
+    <!-- The package name for the system's speech recognition service.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         Example: "com.android.speech/.RecognitionService"
+    -->
+    <string name="config_defaultOnDeviceSpeechRecognitionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSpeechRecognitionService</string>
+
     <!-- The package name for the system's search ui service.
          This service returns search results when provided with an input string.
          This service must be trusted, as it can be activated without explicit consent of the user.
@@ -89,6 +100,20 @@
          Example: "com.android.intelliegence/.SearchUiService"
     -->
     <string name="config_defaultSearchUiService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSearchUiService</string>
+
+    <!-- The package name for the system's smartspace service.
+         This service returns smartspace results.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         If no service with the specified name exists on the device, smartspace will be disabled.
+         Example: "com.android.intelligence/.SmartspaceService"
+    -->
+    <string name="config_defaultSmartspaceService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService</string>
+
+    <!-- The component name for the default profile supervisor, which can be set as a profile owner
+         even after user setup is complete. The defined component should be used for supervision purposes
+         only. The component must be part of a system app.
+    -->
+    <string name="config_defaultSupervisionProfileOwnerComponent" translatable="false">com.google.android.gms/.kids.account.receiver.ProfileOwnerReceiver</string>
 
     <!-- The component name for the system-wide captions manager service.
          This service must be trusted, as the system binds to it and keeps it running.
