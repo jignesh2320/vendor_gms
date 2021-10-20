@@ -6,10 +6,10 @@
 
 # Overlay
 PRODUCT_PACKAGES += \
-    ContactsProviderOverlay \
     FontGoogleSansOverlay \
     GmsConfigOverlayCommon \
     GmsConfigOverlayComms \
+    GmsConfigOverlayContactsProvider \
     GmsConfigOverlayGeotz \
     GmsConfigOverlayGSA \
     GmsConfigOverlayPhotos \
