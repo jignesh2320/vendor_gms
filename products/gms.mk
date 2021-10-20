@@ -4,9 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Overlay
+# GMS RRO overlay packages
 PRODUCT_PACKAGES += \
-    FontGoogleSansOverlay \
     GmsConfigOverlayCommon \
     GmsConfigOverlayComms \
     GmsConfigOverlayContactsProvider \
@@ -16,13 +15,20 @@ PRODUCT_PACKAGES += \
     GmsConfigOverlaySettings \
     GmsConfigOverlayTelecom \
     GmsConfigOverlayTeleService \
+    TurboOverlay
+
+# Pixel RRO overlay packages
+PRODUCT_PACKAGES += \
+    FontGoogleSansOverlay \
     GoogleConfigOverlay \
-    LineageConfigOverlay \
     NexusLauncherOverlay \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
     PixelSetupWizardOverlay \
-    TurboOverlay
+
+# Lineage RRO overlay packages
+PRODUCT_PACKAGES += \
+    LineageConfigOverlay
 
 # SetupWizard
 PRODUCT_PRODUCT_PROPERTIES += \
