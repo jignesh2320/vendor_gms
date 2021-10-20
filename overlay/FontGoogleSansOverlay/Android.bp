@@ -8,6 +8,4 @@ runtime_resource_overlay {
     name: "FontGoogleSansOverlay",
     theme: "FontGoogleSans",
     product_specific: true,
-    resource_dirs: ["res"],
-    sdk_version: "current",
 }

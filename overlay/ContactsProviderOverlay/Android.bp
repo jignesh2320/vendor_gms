@@ -7,6 +7,4 @@
 runtime_resource_overlay {
     name: "ContactsProviderOverlay",
     product_specific: true,
-    resource_dirs: ["res"],
-    sdk_version: "current",
 }

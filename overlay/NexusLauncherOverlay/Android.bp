@@ -7,6 +7,4 @@
 runtime_resource_overlay {
     name: "NexusLauncherOverlay",
     product_specific: true,
-    resource_dirs: ["res"],
-    sdk_version: "current",
 }
