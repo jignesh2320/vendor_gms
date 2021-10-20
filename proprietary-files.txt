@@ -22,29 +22,29 @@ product/app/WebViewGoogle/WebViewGoogle.apk.gz
 -system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk;OVERRIDES=PackageInstaller;PRESIGNED
 
 # GMS mandatory application packages
-# Drive
-# Duo
-# YTMusic
-# Videos
-# YouTube
+# Duo, not existing on redfin, possibly integrated in PrebuiltBugle
 product/app/Chrome/Chrome.apk.gz
 -product/app/Chrome-Stub/Chrome-Stub.apk;OVERRIDES=Browser,Browser2,Jelly;PRESIGNED
+-product/app/Drive/Drive.apk;PRESIGNED
 -product/app/Maps/Maps.apk;PRESIGNED
 -product/app/Photos/Photos.apk;OVERRIDES=Gallery2,SnapdragonGallery;PRESIGNED
 -product/app/PrebuiltGmail/PrebuiltGmail.apk;OVERRIDES=Email,Exchange2;PRESIGNED
 -product/app/TrichromeLibrary-Stub/TrichromeLibrary-Stub.apk;PRESIGNED
 product/app/TrichromeLibrary/TrichromeLibrary.apk.gz
+-product/app/Videos/Videos.apk;PRESIGNED
+-product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk;OVERRIDES=Music,Eleven;PRESIGNED
+-product/app/YouTube/YouTube.apk;PRESIGNED
 -product/priv-app/Velvet/Velvet.apk;OVERRIDES=QuickSearchBox;PRESIGNED
 
 # GMS optional application packages
-# TagGoogle
-# talkback
-# Keep
+# Keep, not existin on redfin
 -product/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk;OVERRIDES=Calculator,ExactCalculator;PRESIGNED
 -product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk;OVERRIDES=Calendar,GoogleCalendarSyncAdapter,Etar;PRESIGNED
 -product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk;OVERRIDES=LatinIME;PRESIGNED
 -product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk;OVERRIDES=AlarmClock,DeskClock;PRESIGNED
+-product/app/talkback/talkback.apk;PRESIGNED
 -product/priv-app/FilesPrebuilt/FilesPrebuilt.apk;PRESIGNED
+-system/priv-app/TagGoogle/TagGoogle.apk;OVERRIDES=Tag;PRESIGNED
 
 # GMS comms suite
 # CarrierServices
