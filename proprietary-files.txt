@@ -1,5 +1,5 @@
 # GMS mandatory core packages
-# GoogleCalendarSyncAdapter, overridden by CalendarGooglePrebuilt
+# GoogleCalendarSyncAdapter, not exisiting on redfin because it is overridden by CalendarGooglePrebuilt
 -product/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk;PRESIGNED
 -product/app/GoogleTTS/GoogleTTS.apk;OVERRIDES=PicoTts;PRESIGNED
 -product/app/LocationHistoryPrebuilt/LocationHistoryPrebuilt.apk;PRESIGNED
@@ -22,7 +22,7 @@ product/app/WebViewGoogle/WebViewGoogle.apk.gz
 -system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk;OVERRIDES=PackageInstaller;PRESIGNED
 
 # GMS mandatory application packages
-# Duo, not existing on redfin, possibly integrated in PrebuiltBugle
+# Duo, not existing on redfin, functionality is possibly integrated in PrebuiltBugle
 product/app/Chrome/Chrome.apk.gz
 -product/app/Chrome-Stub/Chrome-Stub.apk;OVERRIDES=Browser,Browser2,Jelly;PRESIGNED
 -product/app/Drive/Drive.apk;PRESIGNED
@@ -37,7 +37,7 @@ product/app/TrichromeLibrary/TrichromeLibrary.apk.gz
 -product/priv-app/Velvet/Velvet.apk;OVERRIDES=QuickSearchBox;PRESIGNED
 
 # GMS optional application packages
-# Keep, not existin on redfin
+# Keep, not existing on redfin
 -product/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk;OVERRIDES=Calculator,ExactCalculator;PRESIGNED
 -product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk;OVERRIDES=Calendar,GoogleCalendarSyncAdapter,Etar;PRESIGNED
 -product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk;OVERRIDES=LatinIME;PRESIGNED
@@ -47,7 +47,7 @@ product/app/TrichromeLibrary/TrichromeLibrary.apk.gz
 -system/priv-app/TagGoogle/TagGoogle.apk;OVERRIDES=Tag;PRESIGNED
 
 # GMS comms suite
-# CarrierServices
+# CarrierServices, existing on redfin but not used in favor of CarrierConfig
 -product/app/GoogleContacts/GoogleContacts.apk;OVERRIDES=Contacts;PRESIGNED
 product/etc/permissions/com.google.android.dialer.support.xml
 -product/framework/com.google.android.dialer.support.jar;PRESIGNED
