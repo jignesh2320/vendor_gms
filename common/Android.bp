@@ -348,9 +348,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "PrebuiltGmsCoreSc",
+	name: "PrebuiltGmsCore",
 	owner: "gms",
-	apk: "proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreSc.apk",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,

@@ -53,7 +53,7 @@ product/fonts/GoogleSans-Regular.ttf
 -product/priv-app/ConfigUpdater/ConfigUpdater.apk;PRESIGNED
 -product/priv-app/Phonesky/Phonesky.apk;PRESIGNED
 -product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk;PRESIGNED
--product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreSc.apk;PRESIGNED
+-product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreSc.apk:product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk;PRESIGNED
 -system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk;PRESIGNED
 -system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk;PRESIGNED
 
@@ -69,7 +69,7 @@ product/fonts/GoogleSans-Regular.ttf
 
 # Permissions
 etc/permissions/privapp-permissions-google.xml
-product/etc/permissions/com.google.android.dialer.support.xml
+product/etc/default-permissions/default-permissions.xml
 product/etc/permissions/split-permissions-google.xml
 product/etc/permissions/privapp-permissions-google-p.xml
 system_ext/etc/permissions/privapp-permissions-google-se.xml
@@ -77,6 +77,7 @@ system_ext/etc/permissions/privapp-permissions-google-se.xml
 # Phone
 -product/app/GoogleContacts/GoogleContacts.apk;OVERRIDES=Contacts;PRESIGNED
 -product/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk;PRESIGNED
+product/etc/permissions/com.google.android.dialer.support.xml
 -product/priv-app/GoogleDialer/GoogleDialer.apk;OVERRIDES=Dialer;PRESIGNED
 -product/priv-app/PrebuiltBugle/PrebuiltBugle.apk;OVERRIDES=messaging;PRESIGNED
 -product/framework/com.google.android.dialer.support.jar;PRESIGNED
@@ -90,6 +91,10 @@ system_ext/etc/permissions/privapp-permissions-google-se.xml
 
 # Print
 -app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk;OVERRIDES=PrintRecommendationService;PRESIGNED
+
+# Security
+product/etc/security/fsverity/gms_fsverity_cert.der
+product/etc/security/fsverity/play_store_fsi_cert.der
 
 # Setup
 -product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk;OVERRIDES=OneTimeInitializer;PRESIGNED
