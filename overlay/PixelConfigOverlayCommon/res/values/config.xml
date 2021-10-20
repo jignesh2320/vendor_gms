@@ -80,9 +80,6 @@
     <!-- Component name that should be granted Notification Assistant access -->
     <string name="config_defaultAssistantAccessComponent" translatable="false">com.google.android.ext.services/android.ext.services.notification.Assistant</string>
 
-    <!-- The name of the package that will hold the system gallery role. -->
-    <string name="config_systemGallery" translatable="false">com.google.android.apps.photos</string>
-
     <!-- Package name for default keyguard appwidget [DO NOT TRANSLATE] -->
     <string name="widget_default_package_name" translatable="false">com.google.android.deskclock</string>
 
