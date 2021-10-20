@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/gms/common
 
 PRODUCT_COPY_FILES += \
-    vendor/gms/common/proprietary/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
     vendor/gms/common/proprietary/product/app/Chrome/Chrome.apk.gz:$(TARGET_COPY_OUT_PRODUCT)/app/Chrome/Chrome.apk.gz \
     vendor/gms/common/proprietary/product/app/TrichromeLibrary/TrichromeLibrary.apk.gz:$(TARGET_COPY_OUT_PRODUCT)/app/TrichromeLibrary/TrichromeLibrary.apk.gz \
     vendor/gms/common/proprietary/product/app/WebViewGoogle/WebViewGoogle.apk.gz:$(TARGET_COPY_OUT_PRODUCT)/app/WebViewGoogle/WebViewGoogle.apk.gz \
@@ -29,6 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/gms/common/proprietary/product/etc/sysconfig/pixel_experience_2020_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2020_midyear.xml \
     vendor/gms/common/proprietary/product/fonts/GoogleSans-Italic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/GoogleSans-Italic.ttf \
     vendor/gms/common/proprietary/product/fonts/GoogleSans-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/GoogleSans-Regular.ttf \
+    vendor/gms/common/proprietary/system/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
     vendor/gms/common/proprietary/system_ext/etc/permissions/privapp-permissions-google-se.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-se.xml
 
 PRODUCT_PACKAGES += \
@@ -36,9 +36,11 @@ PRODUCT_PACKAGES += \
     GooglePrintRecommendationService \
     DocumentsUIGoogle \
     GooglePackageInstaller \
+    TagGoogle \
     CalculatorGooglePrebuilt \
     CalendarGooglePrebuilt \
     Chrome-Stub \
+    Drive \
     GoogleContacts \
     GoogleContactsSyncAdapter \
     GoogleTTS \
@@ -50,7 +52,11 @@ PRODUCT_PACKAGES += \
     PrebuiltDeskClockGoogle \
     PrebuiltGmail \
     TrichromeLibrary-Stub \
+    Videos \
     WebViewGoogle-Stub \
+    YouTube \
+    YouTubeMusicPrebuilt \
+    talkback \
     AndroidAutoStubPrebuilt \
     ConfigUpdater \
     DevicePersonalizationPrebuiltPixel2020 \
@@ -61,10 +67,9 @@ PRODUCT_PACKAGES += \
     PartnerSetupPrebuilt \
     Phonesky \
     PrebuiltBugle \
-    PrebuiltGmsCore \
+    PrebuiltGmsCoreSc \
     AndroidPlatformServices \
     SetupWizardPrebuilt \
-    TurboPrebuilt \
     Velvet \
     WellbeingPrebuilt \
     GoogleFeedback \

@@ -8,7 +8,7 @@ soong_namespace {
 android_app_import {
 	name: "GoogleExtShared",
 	owner: "gms",
-	apk: "proprietary/app/GoogleExtShared/GoogleExtShared.apk",
+	apk: "proprietary/system/app/GoogleExtShared/GoogleExtShared.apk",
 	overrides: ["ExtShared"],
 	presigned: true,
 	dex_preopt: {
@@ -19,7 +19,7 @@ android_app_import {
 android_app_import {
 	name: "GooglePrintRecommendationService",
 	owner: "gms",
-	apk: "proprietary/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk",
+	apk: "proprietary/system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk",
 	overrides: ["PrintRecommendationService"],
 	presigned: true,
 	dex_preopt: {
@@ -30,7 +30,7 @@ android_app_import {
 android_app_import {
 	name: "DocumentsUIGoogle",
 	owner: "gms",
-	apk: "proprietary/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk",
+	apk: "proprietary/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk",
 	overrides: ["DocumentsUI"],
 	presigned: true,
 	dex_preopt: {
@@ -42,8 +42,20 @@ android_app_import {
 android_app_import {
 	name: "GooglePackageInstaller",
 	owner: "gms",
-	apk: "proprietary/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk",
+	apk: "proprietary/system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk",
 	overrides: ["PackageInstaller"],
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "TagGoogle",
+	owner: "gms",
+	apk: "proprietary/system/priv-app/TagGoogle/TagGoogle.apk",
+	overrides: ["Tag"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -55,7 +67,7 @@ android_app_import {
 	name: "CalculatorGooglePrebuilt",
 	owner: "gms",
 	apk: "proprietary/product/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk",
-	overrides: ["ExactCalculator"],
+	overrides: ["Calculator", "ExactCalculator"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -67,7 +79,7 @@ android_app_import {
 	name: "CalendarGooglePrebuilt",
 	owner: "gms",
 	apk: "proprietary/product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk",
-	overrides: ["Calendar", "Etar"],
+	overrides: ["Calendar", "GoogleCalendarSyncAdapter", "Etar"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -79,7 +91,18 @@ android_app_import {
 	name: "Chrome-Stub",
 	owner: "gms",
 	apk: "proprietary/product/app/Chrome-Stub/Chrome-Stub.apk",
-	overrides: ["Browser2", "ChromePublic", "Jelly"],
+	overrides: ["Browser", "Browser2", "Jelly"],
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "Drive",
+	owner: "gms",
+	apk: "proprietary/product/app/Drive/Drive.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -114,6 +137,7 @@ android_app_import {
 	name: "GoogleTTS",
 	owner: "gms",
 	apk: "proprietary/product/app/GoogleTTS/GoogleTTS.apk",
+	overrides: ["PicoTts"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -170,7 +194,7 @@ android_app_import {
 	name: "Photos",
 	owner: "gms",
 	apk: "proprietary/product/app/Photos/Photos.apk",
-	overrides: ["Gallery2", "PhotoTable", "SnapdragonGallery"],
+	overrides: ["Gallery2", "SnapdragonGallery"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -182,7 +206,7 @@ android_app_import {
 	name: "PrebuiltDeskClockGoogle",
 	owner: "gms",
 	apk: "proprietary/product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk",
-	overrides: ["DeskClock"],
+	overrides: ["AlarmClock", "DeskClock"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -194,7 +218,7 @@ android_app_import {
 	name: "PrebuiltGmail",
 	owner: "gms",
 	apk: "proprietary/product/app/PrebuiltGmail/PrebuiltGmail.apk",
-	overrides: ["Email"],
+	overrides: ["Email", "Exchange2"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -214,9 +238,55 @@ android_app_import {
 }
 
 android_app_import {
+	name: "Videos",
+	owner: "gms",
+	apk: "proprietary/product/app/Videos/Videos.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
 	name: "WebViewGoogle-Stub",
 	owner: "gms",
 	apk: "proprietary/product/app/WebViewGoogle-Stub/WebViewGoogle-Stub.apk",
+	overrides: ["webview"],
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "YouTube",
+	owner: "gms",
+	apk: "proprietary/product/app/YouTube/YouTube.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "YouTubeMusicPrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk",
+	overrides: ["Music", "Eleven"],
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "talkback",
+	owner: "gms",
+	apk: "proprietary/product/app/talkback/talkback.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -348,9 +418,10 @@ android_app_import {
 }
 
 android_app_import {
-	name: "PrebuiltGmsCore",
+	name: "PrebuiltGmsCoreSc",
 	owner: "gms",
-	apk: "proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk",
+	apk: "proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreSc.apk",
+	overrides: ["NetworkRecommendation"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -375,18 +446,7 @@ android_app_import {
 	name: "SetupWizardPrebuilt",
 	owner: "gms",
 	apk: "proprietary/product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "TurboPrebuilt",
-	owner: "gms",
-	apk: "proprietary/product/priv-app/TurboPrebuilt/TurboPrebuilt.apk",
+	overrides: ["Provision"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
