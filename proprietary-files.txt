@@ -74,21 +74,13 @@ product/etc/sysconfig/pixel_experience_2020.xml
 system/etc/permissions/privapp-permissions-google.xml
 system_ext/etc/permissions/privapp-permissions-google-se.xml
 
-# Device Personalization Services
+# Pixel application packages
+-product/app/MarkupGoogle/MarkupGoogle.apk;PRESIGNED
 -product/priv-app/DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk;PRESIGNED
-
-# Files
+-system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk;OVERRIDES=Launcher3QuickStep,TrebuchetQuickStep;PRESIGNED
+-system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk;PRESIGNED
 -system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk;OVERRIDES=DocumentsUI;PRESIGNED
 
-# Google Sans
+# Pixel fonts
 product/fonts/GoogleSans-Italic.ttf
 product/fonts/GoogleSans-Regular.ttf
-
-# Photo/Video
--product/app/MarkupGoogle/MarkupGoogle.apk;PRESIGNED
-
-# Pixel launcher
--system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk;OVERRIDES=Launcher3QuickStep,TrebuchetQuickStep;PRESIGNED
-
-# Setup
--system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk;PRESIGNED
