@@ -95,6 +95,7 @@ system_ext/etc/permissions/privapp-permissions-google-se.xml
 -product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk;OVERRIDES=OneTimeInitializer;PRESIGNED
 -product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk;PRESIGNED
 -product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk;PRESIGNED
+-system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk;PRESIGNED
 
 # Turbo
 -product/priv-app/TurboPrebuilt/TurboPrebuilt.apk;PRESIGNED

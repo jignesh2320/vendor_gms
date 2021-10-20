@@ -66,4 +66,5 @@ PRODUCT_PACKAGES += \
     GoogleFeedback \
     GoogleServicesFramework \
     NexusLauncherRelease \
+    PixelSetupWizard \
     com.google.android.dialer.support
