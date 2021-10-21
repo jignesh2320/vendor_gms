@@ -23,6 +23,8 @@ product/app/WebViewGoogle/WebViewGoogle.apk.gz
 
 # GMS mandatory application packages
 # Duo, not existing on redfin
+# YTMusic
+# Videos
 product/app/Chrome/Chrome.apk.gz
 -product/app/Chrome-Stub/Chrome-Stub.apk;OVERRIDES=Browser,Browser2,Jelly;PRESIGNED
 -product/app/Drive/Drive.apk;PRESIGNED
@@ -31,8 +33,6 @@ product/app/Chrome/Chrome.apk.gz
 -product/app/PrebuiltGmail/PrebuiltGmail.apk;OVERRIDES=Email,Exchange2;PRESIGNED
 -product/app/TrichromeLibrary-Stub/TrichromeLibrary-Stub.apk;PRESIGNED
 product/app/TrichromeLibrary/TrichromeLibrary.apk.gz
--product/app/Videos/Videos.apk;PRESIGNED
--product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk;OVERRIDES=Music,Eleven;PRESIGNED
 -product/app/YouTube/YouTube.apk;PRESIGNED
 -product/priv-app/Velvet/Velvet.apk;OVERRIDES=QuickSearchBox;PRESIGNED
 

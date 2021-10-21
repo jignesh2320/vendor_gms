@@ -51,10 +51,8 @@ PRODUCT_PACKAGES += \
     PrebuiltDeskClockGoogle \
     PrebuiltGmail \
     TrichromeLibrary-Stub \
-    Videos \
     WebViewGoogle-Stub \
     YouTube \
-    YouTubeMusicPrebuilt \
     talkback \
     AndroidAutoStubPrebuilt \
     ConfigUpdater \
