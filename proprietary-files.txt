@@ -81,10 +81,10 @@ system_ext/etc/permissions/privapp-permissions-google-se.xml
 product/etc/sysconfig/pixel_2016_exclusive.xml|f4eeeeec14b22b913d865ba5895dcca9f0214f57
 
 # Pixel application packages
+# PixelSetupWizard
 -product/app/MarkupGoogle/MarkupGoogle.apk;PRESIGNED
 -product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk;PRESIGNED
 -product/priv-app/DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk;PRESIGNED
--system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk;PRESIGNED
 -system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk;OVERRIDES=DocumentsUI;PRESIGNED
 
 # Google Extension
