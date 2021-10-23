@@ -27,7 +27,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Pixel RRO overlay packages
 PRODUCT_PACKAGES += \
     GoogleConfigOverlay \
-    NexusLauncherOverlay \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
     PixelSetupWizardOverlay \
