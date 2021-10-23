@@ -50,6 +50,7 @@ PRODUCT_PACKAGES += \
     Photos \
     PrebuiltDeskClockGoogle \
     PrebuiltGmail \
+    SoundPickerPrebuilt \
     TrichromeLibrary-Stub \
     WebViewGoogle-Stub \
     YouTube \

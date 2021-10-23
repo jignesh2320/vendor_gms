@@ -87,3 +87,5 @@ system_ext/etc/permissions/privapp-permissions-google-se.xml
 
 # Google Extension
 -system/priv-app/GoogleExtServices/GoogleExtServices.apk;PRESIGNED|b9db71197fecf9886207af70a2a798fde8b23c4c
+
+-product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk;PRESIGNED
