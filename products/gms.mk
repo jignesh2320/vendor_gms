@@ -39,7 +39,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.bs_theme=true \
     ro.com.google.ime.height_ratio=1.2 \
     ro.com.google.ime.kb_pad_port_b=10 \
-    ro.com.google.ime.theme_id=5
+    ro.com.google.ime.theme_id=5 \
+    ro.setupwizard.enterprise_mode=1 \
+    ro.setupwizard.esim_cid_ignore=00000001 \
+    setupwizard.feature.baseline_setupwizard_enabled=true \
+    setupwizard.feature.show_pai_screen_in_main_flow.carrier1839=false \
+    setupwizard.feature.show_pixel_tos=true \
+    setupwizard.feature.skip_button_use_mobile_data.carrier1839=true \
 
 # Lineage RRO overlay packages
 PRODUCT_PACKAGES += \
