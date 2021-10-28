@@ -31,7 +31,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageConfigOverlay
 
-# SetupWizard
+# GMS properties
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true \
     ro.setupwizard.rotation_locked=true \
