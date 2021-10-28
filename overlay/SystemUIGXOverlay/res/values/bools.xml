@@ -2,7 +2,7 @@
 <resources>
     <bool name="are_flags_overrideable">true</bool>
 
-    <bool name="flag_monet">true</bool>
+    <!-- <bool name="flag_monet">true</bool> -->
 
     <!-- AOD/Lockscreen alternate layout -->
     <bool name="flag_keyguard_layout">true</bool>
