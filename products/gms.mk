@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
     PixelSetupWizardOverlay \
+    SystemUIGXOverlay
 
 # Lineage RRO overlay packages
 PRODUCT_PACKAGES += \
@@ -35,5 +36,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true \
     ro.setupwizard.rotation_locked=true \
     setupwizard.theme=glif_v3_light
+
+# Pixel properties
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay
 
 $(call inherit-product, vendor/gms/common/common-vendor.mk)
