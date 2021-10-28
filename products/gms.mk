@@ -20,7 +20,6 @@ PRODUCT_PACKAGES += \
 
 # Pixel RRO overlay packages
 PRODUCT_PACKAGES += \
-    FontGoogleSansOverlay \
     GoogleConfigOverlay \
     NexusLauncherOverlay \
     PixelConfigOverlayCommon \
