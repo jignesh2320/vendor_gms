@@ -16,7 +16,7 @@ PRODUCT_PACKAGES += \
     GmsConfigOverlaySettingsProvider \
     GmsConfigOverlayTelecom \
     GmsConfigOverlayTeleService \
-    TurboOverlay
+    GmsConfigOverlayTurbo
 
 # Pixel RRO overlay packages
 PRODUCT_PACKAGES += \
