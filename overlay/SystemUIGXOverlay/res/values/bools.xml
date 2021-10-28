@@ -17,5 +17,5 @@
 
     <bool name="flag_charging_ripple">true</bool>
 
-    <bool name="flag_smartspace">true</bool>
+    <!-- <bool name="flag_smartspace">true</bool> -->
 </resources>
