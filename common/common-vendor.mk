@@ -70,6 +70,7 @@ PRODUCT_PACKAGES += \
     PrebuiltGmsCoreSc \
     AndroidPlatformServices \
     SetupWizardPrebuilt \
+    TurboPrebuilt \
     Velvet \
     WellbeingPrebuilt \
     GoogleFeedback \
