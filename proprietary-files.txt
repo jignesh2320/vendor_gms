@@ -22,7 +22,7 @@ product/app/WebViewGoogle/WebViewGoogle.apk.gz
 -system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk;OVERRIDES=PackageInstaller;PRESIGNED
 
 # GMS mandatory application packages
-# Duo, not existing on redfin, functionality is possibly integrated in PrebuiltBugle
+# Duo, not existing on redfin
 product/app/Chrome/Chrome.apk.gz
 -product/app/Chrome-Stub/Chrome-Stub.apk;OVERRIDES=Browser,Browser2,Jelly;PRESIGNED
 -product/app/Drive/Drive.apk;PRESIGNED
