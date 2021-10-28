@@ -35,7 +35,11 @@ PRODUCT_PACKAGES += \
 
 # Pixel properties
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay \
+    ro.com.google.ime.bs_theme=true \
+    ro.com.google.ime.height_ratio=1.2 \
+    ro.com.google.ime.kb_pad_port_b=10 \
+    ro.com.google.ime.theme_id=5
 
 # Lineage RRO overlay packages
 PRODUCT_PACKAGES += \
