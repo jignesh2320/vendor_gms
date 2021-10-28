@@ -18,6 +18,12 @@ PRODUCT_PACKAGES += \
     GmsConfigOverlayTeleService \
     GmsConfigOverlayTurbo
 
+# GMS properties
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.opa.eligible_device=true \
+    ro.setupwizard.rotation_locked=true \
+    setupwizard.theme=glif_v3_light
+
 # Pixel RRO overlay packages
 PRODUCT_PACKAGES += \
     GoogleConfigOverlay \
@@ -27,18 +33,12 @@ PRODUCT_PACKAGES += \
     PixelSetupWizardOverlay \
     SystemUIGXOverlay
 
-# Lineage RRO overlay packages
-PRODUCT_PACKAGES += \
-    LineageConfigOverlay
-
-# GMS properties
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.opa.eligible_device=true \
-    ro.setupwizard.rotation_locked=true \
-    setupwizard.theme=glif_v3_light
-
 # Pixel properties
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay
+
+# Lineage RRO overlay packages
+PRODUCT_PACKAGES += \
+    LineageConfigOverlay
 
 $(call inherit-product, vendor/gms/common/common-vendor.mk)
