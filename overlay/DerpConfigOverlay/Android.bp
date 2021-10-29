@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "LineageConfigOverlay",
+    name: "DerpConfigOverlay",
     product_specific: true,
 }

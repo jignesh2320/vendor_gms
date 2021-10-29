@@ -47,8 +47,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     setupwizard.feature.show_pixel_tos=true \
     setupwizard.feature.skip_button_use_mobile_data.carrier1839=true \
 
-# Lineage RRO overlay packages
+# DerpFest RRO overlay packages
 PRODUCT_PACKAGES += \
-    LineageConfigOverlay
+    DerpConfigOverlay
 
 $(call inherit-product, vendor/gms/common/common-vendor.mk)

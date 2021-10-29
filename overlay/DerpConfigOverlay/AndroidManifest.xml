@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.overlay.lineageconfig"
+    package="com.google.android.overlay.derpconfig"
     android:versionCode="1"
     android:versionName="1.0">
     <overlay android:targetPackage="android" android:priority="3" android:isStatic="true" />
