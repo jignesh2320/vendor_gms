@@ -62,6 +62,9 @@
         <item>com.nuance.xt9.input</item>
     </string-array>
 
+    <!-- Package name of the required service extension package. -->
+    <string name="config_servicesExtensionPackage" translatable="false">com.google.android.ext.services</string>
+
     <string name="calendar_component_name" translatable="false">com.google.android.calendar/com.android.calendar.AllInOneActivity</string>
     <string name="clock_component_name" translatable="false">com.google.android.deskclock/com.android.deskclock.DeskClock</string>
 </resources>

@@ -83,3 +83,6 @@ system_ext/etc/permissions/privapp-permissions-google-se.xml
 -system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk;OVERRIDES=Launcher3QuickStep,TrebuchetQuickStep;PRESIGNED
 -system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk;PRESIGNED
 -system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk;OVERRIDES=DocumentsUI;PRESIGNED
+
+# Google Extension
+-system/priv-app/GoogleExtServices/GoogleExtServices.apk;PRESIGNED|b9db71197fecf9886207af70a2a798fde8b23c4c

@@ -33,6 +33,7 @@ PRODUCT_PACKAGES += \
     GoogleExtShared \
     GooglePrintRecommendationService \
     DocumentsUIGoogle \
+    GoogleExtServices \
     GooglePackageInstaller \
     TagGoogle \
     CalculatorGooglePrebuilt \
