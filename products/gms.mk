@@ -28,7 +28,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     GoogleConfigOverlay \
     PixelConfigOverlayCommon \
-    PixelDocumentsUIGoogleOverlay \
     SystemUIGXOverlay
 
 # Pixel properties
