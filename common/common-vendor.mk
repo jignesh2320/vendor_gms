@@ -58,6 +58,7 @@ PRODUCT_PACKAGES += \
     talkback \
     AndroidAutoStubPrebuilt \
     ConfigUpdater \
+    DeviceIntelligenceNetworkPrebuilt \
     DevicePersonalizationPrebuiltPixel2020 \
     FilesPrebuilt \
     GoogleDialer \

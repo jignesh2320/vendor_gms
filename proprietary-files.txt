@@ -79,6 +79,7 @@ system_ext/etc/permissions/privapp-permissions-google-se.xml
 
 # Pixel application packages
 -product/app/MarkupGoogle/MarkupGoogle.apk;PRESIGNED
+-product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk;PRESIGNED
 -product/priv-app/DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk;PRESIGNED
 -system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk;OVERRIDES=Launcher3QuickStep,TrebuchetQuickStep;PRESIGNED
 -system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk;PRESIGNED
