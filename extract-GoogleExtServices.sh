@@ -52,13 +52,13 @@ cp "${TMPDIR}"/GoogleExtServices.apk "${out}"/proprietary/system/priv-app/Google
 rm -rf "${TMPDIR}"
 
 # Pin the updated file in proprietary-files.txt
-if [ -f ./proprietary-files.txt ]; then
+if [ -f "${MY_DIR}/proprietary-files.txt" ]; then
     name=$(cat "${SRC}"/product/etc/build.prop | grep ro.product.product.name | sed 's|=| |' | awk '{print $2}')
     id=$(cat "${SRC}"/product/etc/build.prop | grep ro.product.build.id | sed 's|=| |' | awk '{print $2}')
     sha1sum=$(sha1sum "${out}"/proprietary/system/priv-app/GoogleExtServices/GoogleExtServices.apk | awk '{print $1}')
 
-    sed -i "s|# Google extension services.*|# Google extension services (extracted from com.google.android.extservices.apex) - from ${name} ${id}|" "${out}"/../proprietary-files.txt
-    sed -i "s|-system/priv-app/GoogleExtServices/GoogleExtServices.apk;PRESIGNED.*|-system/priv-app/GoogleExtServices/GoogleExtServices.apk;PRESIGNED\|${sha1sum}|" "${out}"/../proprietary-files.txt
+    sed -i "s|# Google extension services.*|# Google extension services (extracted from com.google.android.extservices.apex) - from ${name} ${id}|" "${MY_DIR}/proprietary-files.txt"
+    sed -i "s|-system/priv-app/GoogleExtServices/GoogleExtServices.apk;PRESIGNED.*|-system/priv-app/GoogleExtServices/GoogleExtServices.apk;PRESIGNED\|${sha1sum}|" "${MY_DIR}/proprietary-files.txt"
 fi
 
 echo "Updated GoogleExtServices.apk!"
