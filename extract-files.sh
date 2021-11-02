@@ -55,6 +55,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        system/priv-app/GoogleExtServices/GoogleExtServices.apk)
+            touch "${2}"
+            ;;
     esac
 }
 
@@ -67,5 +70,8 @@ fi
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+
+# Update google extension services
+source "${MY_DIR}/extract-GoogleExtServices.sh"
 
 "${MY_DIR}/setup-makefiles.sh"

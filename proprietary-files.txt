@@ -87,7 +87,7 @@ product/etc/sysconfig/pixel_2016_exclusive.xml|f4eeeeec14b22b913d865ba5895dcca9f
 -system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk;PRESIGNED
 -system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk;OVERRIDES=DocumentsUI;PRESIGNED
 
-# Google Extension
+# Google extension services - from redfin SP1A.210812.016.A1
 -system/priv-app/GoogleExtServices/GoogleExtServices.apk;PRESIGNED|b9db71197fecf9886207af70a2a798fde8b23c4c
 
 -product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk;PRESIGNED
