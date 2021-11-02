@@ -6,5 +6,4 @@
 
 runtime_resource_overlay {
     name: "GmsConfigOverlayContactsProvider",
-    product_specific: true,
 }

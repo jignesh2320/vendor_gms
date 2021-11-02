@@ -6,5 +6,4 @@
 
 runtime_resource_overlay {
     name: "GmsConfigOverlayTeleService",
-    product_specific: true,
 }
