@@ -53,12 +53,6 @@
     <!-- Component name that should be granted Notification Assistant access -->
     <string name="config_defaultAssistantAccessComponent" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationAssistantService</string>
 
-    <!-- The component name for the default system attention service.
-         This service must be trusted, as it can be activated without explicit consent of the user.
-         See android.attention.AttentionManagerService.
-    -->
-    <string name="config_defaultAttentionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.attention.service.AiAiAttentionService</string>
-
     <!-- The package name for the system's augmented autofill service.
          This service must be trusted, as it can be activated without explicit consent of the user.
          If no service with the specified name exists on the device, augmented autofill wil be
@@ -86,7 +80,7 @@
     <string name="config_defaultContentSuggestionsService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
 
     <!-- Colon separated list of package names that should be granted DND access -->
-    <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.GoogleCamera:com.google.android.gms:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.dreamliner:com.google.android.apps.safetyhub:com.google.android.dialer</string>
+    <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.GoogleCamera:com.google.android.gms:com.google.intelligence.sense:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.google.android.dialer</string>
 
     <string name="config_defaultMusicRecognitionService" translatable="false">com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.service.SoundSearchService</string>
 
@@ -95,12 +89,6 @@
          Example: "com.android.speech/.RecognitionService"
     -->
     <string name="config_defaultOnDeviceSpeechRecognitionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSpeechRecognitionService</string>
-
-    <!-- The component name for the default system rotation resolver service.
-        This service must be trusted, as it can be activated without explicit consent of the user.
-        See android.service.rotationresolver.RotationResolverService.
-   -->
-    <string name="config_defaultRotationResolverService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiRotationResolverService</string>
 
     <!-- The package name for the system's search ui service.
          This service returns search results when provided with an input string.
@@ -191,15 +179,8 @@
          features. Examples include the autorotate feature. -->
     <string name="config_systemVisualIntelligence" translatable="false">com.google.android.as</string>
 
-    <!-- Flag indicating whether we should enable the adaptive sleep.-->
-    <bool name="config_adaptive_sleep_available">true</bool>
-
     <!-- Controls whether system buttons use all caps for text -->
     <bool name="config_buttonTextAllCaps">false</bool>
-
-    <!-- Controls whether hints for gestural navigation are shown when the device is setup.
-         This should only be set when the device has gestural navigation enabled by default. -->
-    <bool name="config_showGesturalNavigationHints">true</bool>
 
     <!-- Flag indicating whether we should enable smart battery. -->
 	<bool name="config_smart_battery_available">true</bool>
@@ -209,23 +190,6 @@
 
 	<!-- Whether this device is supporting the camera toggle -->
     <bool name="config_supportsMicToggle">true</bool>
-
-    <!-- Control the behavior when the user presses the power and volume up buttons together.
-            0 - Nothing
-            1 - Mute toggle
-            2 - Global actions menu
-    -->
-    <integer name="config_keyChordPowerVolumeUp">1</integer>
-
-    <!-- Control the behavior when the user long presses the power button.
-            0 - Nothing
-            1 - Global actions menu
-            2 - Power off (with confirmation)
-            3 - Power off (without confirmation)
-            4 - Go to voice assist
-            5 - Go to assistant (Settings.Secure.ASSISTANT)
-    -->
-    <integer name="config_longPressOnPowerBehavior">1</integer>
 
     <!-- Default number of days to retain for the automatic storage manager. -->
     <integer translatable="false" name="config_storageManagerDaystoRetainDefault">60</integer>
