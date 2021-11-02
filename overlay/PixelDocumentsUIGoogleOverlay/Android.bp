@@ -7,7 +7,4 @@
 runtime_resource_overlay {
     name: "PixelDocumentsUIGoogleOverlay",
     product_specific: true,
-    static_libs: [
-        "com.google.android.material_material",
-    ],
 }
