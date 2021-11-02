@@ -76,6 +76,6 @@ source_build_id=$(cat "${SRC}"/product/etc/build.prop | grep ro.product.build.id
 sed -i "s|# All unpinned files are extracted from.*|# All unpinned files are extracted from ${source_product_name} ${source_build_id}|" "${MY_DIR}/proprietary-files.txt"
 
 # Update google extension services
-source "${MY_DIR}/update-GoogleExtServices.sh"
+source "${MY_DIR}/extract-GoogleExtServices.sh"
 
 "${MY_DIR}/setup-makefiles.sh"
