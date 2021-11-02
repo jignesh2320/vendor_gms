@@ -6,4 +6,5 @@
 
 runtime_resource_overlay {
     name: "GmsConfigOverlaySettingsProvider",
+    product_specific: true,
 }

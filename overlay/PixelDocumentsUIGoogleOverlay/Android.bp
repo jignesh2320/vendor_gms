@@ -7,4 +7,5 @@
 runtime_resource_overlay {
     name: "PixelDocumentsUIGoogleOverlay",
     theme: "PixelDocumentsUIGoogleOverlay",
+    product_specific: true,
 }

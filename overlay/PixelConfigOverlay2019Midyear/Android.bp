@@ -6,4 +6,5 @@
 
 runtime_resource_overlay {
     name: "PixelConfigOverlay2019Midyear",
+    product_specific: true,
 }
