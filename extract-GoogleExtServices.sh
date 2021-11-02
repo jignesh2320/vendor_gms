@@ -57,7 +57,7 @@ if [ -f ./proprietary-files.txt ]; then
     id=$(cat "${SRC}"/product/etc/build.prop | grep ro.product.build.id | sed 's|=| |' | awk '{print $2}')
     sha1sum=$(sha1sum "${out}"/proprietary/system/priv-app/GoogleExtServices/GoogleExtServices.apk | awk '{print $1}')
 
-    sed -i "s|# Google extension services.*|# Google extension services - from ${name} ${id}|" "${out}"/../proprietary-files.txt
+    sed -i "s|# Google extension services.*|# Google extension services (extracted from com.google.android.extservices.apex) - from ${name} ${id}|" "${out}"/../proprietary-files.txt
     sed -i "s|-system/priv-app/GoogleExtServices/GoogleExtServices.apk;PRESIGNED.*|-system/priv-app/GoogleExtServices/GoogleExtServices.apk;PRESIGNED\|${sha1sum}|" "${out}"/../proprietary-files.txt
 fi
 
