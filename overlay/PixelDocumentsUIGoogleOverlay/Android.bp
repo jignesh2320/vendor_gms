@@ -8,15 +8,6 @@ runtime_resource_overlay {
     name: "PixelDocumentsUIGoogleOverlay",
     product_specific: true,
     static_libs: [
-        "androidx.appcompat_appcompat",
-        "androidx.legacy_legacy-support-core-ui",
-        "androidx.legacy_legacy-support-v13",
-        "androidx.legacy_legacy-support-v4",
-        "androidx.recyclerview_recyclerview",
-        "androidx.recyclerview_recyclerview-selection",
-        "androidx.transition_transition",
-        "apache-commons-compress",
         "com.google.android.material_material",
-        "guava",
     ],
 }
