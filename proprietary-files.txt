@@ -1,7 +1,7 @@
-# All unpinned files are extracted from redfin SP1A.210812.016.A1
+# All unpinned files are extracted from oriole SD1A.210817.036
 
 # GMS mandatory core packages
-# GoogleCalendarSyncAdapter, not exisiting on redfin because it is overridden by CalendarGooglePrebuilt
+# GoogleCalendarSyncAdapter, not exisiting on oriole because it is overridden by CalendarGooglePrebuilt
 -product/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk;PRESIGNED
 -product/app/GoogleTTS/GoogleTTS.apk;OVERRIDES=PicoTts;PRESIGNED
 -product/app/LocationHistoryPrebuilt/LocationHistoryPrebuilt.apk;PRESIGNED
@@ -24,7 +24,7 @@ product/app/WebViewGoogle/WebViewGoogle.apk.gz
 -system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk;OVERRIDES=PackageInstaller;PRESIGNED
 
 # GMS mandatory application packages
-# Duo, not existing on redfin
+# Duo, not existing on oriole
 # YTMusic
 # Videos
 product/app/Chrome/Chrome.apk.gz
@@ -39,7 +39,7 @@ product/app/TrichromeLibrary/TrichromeLibrary.apk.gz
 -product/priv-app/Velvet/Velvet.apk;OVERRIDES=QuickSearchBox;PRESIGNED
 
 # GMS optional application packages
-# Keep, not existing on redfin
+# Keep, not existing on oriole
 -product/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk;OVERRIDES=Calculator,ExactCalculator;PRESIGNED
 -product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk;OVERRIDES=Calendar,GoogleCalendarSyncAdapter,Etar;PRESIGNED
 -product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk;OVERRIDES=LatinIME;PRESIGNED
@@ -49,7 +49,7 @@ product/app/TrichromeLibrary/TrichromeLibrary.apk.gz
 -system/priv-app/TagGoogle/TagGoogle.apk;OVERRIDES=Tag;PRESIGNED
 
 # GMS comms suite
-# CarrierServices, existing on redfin but not used in favor of CarrierConfig
+# CarrierServices, existing on oriole but not used in favor of CarrierConfig
 -product/app/GoogleContacts/GoogleContacts.apk;OVERRIDES=Contacts;PRESIGNED
 product/etc/permissions/com.google.android.dialer.support.xml
 -product/framework/com.google.android.dialer.support.jar;PRESIGNED
@@ -76,6 +76,7 @@ product/etc/sysconfig/pixel_experience_2019_midyear.xml
 product/etc/sysconfig/pixel_experience_2019.xml
 product/etc/sysconfig/pixel_experience_2020_midyear.xml
 product/etc/sysconfig/pixel_experience_2020.xml
+product/etc/sysconfig/pixel_experience_2021_midyear.xml
 system/etc/permissions/privapp-permissions-google.xml
 system_ext/etc/permissions/privapp-permissions-google-se.xml
 
@@ -85,11 +86,11 @@ product/etc/sysconfig/pixel_2016_exclusive.xml|f4eeeeec14b22b913d865ba5895dcca9f
 # Pixel application packages
 -product/app/MarkupGoogle/MarkupGoogle.apk;PRESIGNED
 -product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk;PRESIGNED
--product/priv-app/DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk;PRESIGNED
+-product/priv-app/DevicePersonalizationPrebuiltPixel2021/DevicePersonalizationPrebuiltPixel2021.apk;PRESIGNED
 -system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk;PRESIGNED
 -system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk;OVERRIDES=DocumentsUI;PRESIGNED
 
-# Google extension services (extracted from com.google.android.extservices.apex) - from redfin SP1A.210812.016.A1
+# Google extension services (extracted from com.google.android.extservices.apex) - from oriole SD1A.210817.036
 -system/priv-app/GoogleExtServices/GoogleExtServices.apk;PRESIGNED|b9db71197fecf9886207af70a2a798fde8b23c4c
 
 -product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk;PRESIGNED

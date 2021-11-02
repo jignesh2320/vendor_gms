@@ -330,9 +330,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "DevicePersonalizationPrebuiltPixel2020",
+	name: "DevicePersonalizationPrebuiltPixel2021",
 	owner: "gms",
-	apk: "proprietary/product/priv-app/DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk",
+	apk: "proprietary/product/priv-app/DevicePersonalizationPrebuiltPixel2021/DevicePersonalizationPrebuiltPixel2021.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
