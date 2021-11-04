@@ -75,4 +75,5 @@ PRODUCT_PACKAGES += \
     WellbeingPrebuilt \
     GoogleFeedback \
     GoogleServicesFramework \
+    PixelSetupWizard \
     com.google.android.dialer.support
