@@ -30,6 +30,11 @@ else
     out="${ANDROID_ROOT}/${OUTDIR}"
 fi
 
+if [ -z "${MY_DIR}" ]; then
+    echo "Missing MY_DIR, assuming: './'"
+    MY_DIR = "./"
+fi
+
 if [ ! -f "${SRC}"/system/system/apex/com.google.android.extservices.apex ]; then
     echo "Missing the extservices apex at: '${SRC}/system/system/apex/com.google.android.extservices.apex'"
     exit
