@@ -40,8 +40,23 @@
         <item>android</item>
     </string-array>
 
+    <!-- When true, enables the allowlisted app to handle bug reports from power menu short press. -->
+    <!--<bool name="config_bugReportHandlerEnabled">true</bool>-->
+
     <!-- Controls whether system buttons use all caps for text -->
     <bool name="config_buttonTextAllCaps">false</bool>
+
+    <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
+    <!--<bool name="config_defaultRingtonePickerEnabled">false</bool>-->
+
+    <!-- Specify if the fingerprint hardware support gestures-->
+    <!--<bool name="config_fingerprintSupportsGestures">true</bool>-->
+
+    <!-- When true, enables the allowlisted app to upload profcollect reports. -->
+    <!--<bool name="config_profcollectReportUploaderEnabled">false</bool>-->
+
+    <!-- Whether to send a custom package name with the PSD.-->
+    <!--<bool name="config_sendPackageName">false</bool>-->
 
     <!-- Flag indicating whether we should enable smart battery. -->
     <bool name="config_smart_battery_available">true</bool>
