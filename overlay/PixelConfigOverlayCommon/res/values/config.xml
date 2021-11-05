@@ -104,6 +104,12 @@
     <!-- Default number of days to retain for the automatic storage manager. -->
     <integer translatable="false" name="config_storageManagerDaystoRetainDefault">60</integer>
 
+    <!-- [CHAR LIMIT=40] Title of dialog that is shown when system is starting. -->
+    <!--<string name="android_start_title">Pixel is starting…</string>-->
+
+    <!-- [CHAR LIMIT=40] Title of dialog that is shown when performing a system update. -->
+    <!--<string name="android_upgrading_title">Pixel is updating…</string>-->
+
     <!-- The app which will handle routine based automatic battery saver, if empty the UI for
          routine based battery saver will be hidden -->
     <string name="config_batterySaverScheduleProvider">com.google.android.apps.turbo</string>
@@ -124,6 +130,9 @@
          Example: "com.android.augmentedautofill/.AugmentedAutofillService"
     -->
     <string name="config_defaultAugmentedAutofillService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService</string>
+
+    <!-- The package name for the default bug report handler app from power menu short press. This app must be allowlisted. -->
+    <!--<string name="config_defaultBugReportHandlerApp" translatable="false">com.google.android.apps.internal.betterbug</string>-->
 
     <!-- The package name for the system's content capture service.
          This service must be trusted, as it can be activated without explicit consent of the user.
@@ -146,6 +155,9 @@
     <!-- Colon separated list of package names that should be granted DND access -->
     <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.GoogleCamera:com.google.android.gms:com.google.intelligence.sense:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.google.android.dialer</string>
 
+    <!-- Component name for the default module metadata provider on this device -->
+    <!--<string name="config_defaultModuleMetadataProvider" translatable="false">com.google.android.modulemetadata</string>-->
+
     <string name="config_defaultMusicRecognitionService" translatable="false">com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.service.SoundSearchService</string>
 
     <!-- The package name for the system's speech recognition service.
@@ -153,6 +165,12 @@
          Example: "com.android.speech/.RecognitionService"
     -->
     <string name="config_defaultOnDeviceSpeechRecognitionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSpeechRecognitionService</string>
+
+    <!-- The action name for the default profcollect report uploader app. -->
+    <string name="config_defaultProfcollectReportUploaderAction" translatable="false">com.google.android.apps.betterbug.intent.action.UPLOAD_PROFILE</string>
+
+    <!-- The package name for the default profcollect report uploader app. This app must be allowlisted. -->
+    <string name="config_defaultProfcollectReportUploaderApp" translatable="false">com.google.android.apps.internal.betterbug</string>
 
     <!-- The package name for the system's search ui service.
          This service returns search results when provided with an input string.
@@ -170,6 +188,11 @@
          Example: "com.android.intelligence/.SmartspaceService"
     -->
     <string name="config_defaultSmartspaceService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService</string>
+
+    <!-- The component name for the default profile supervisor, which can be set as a profile owner
+    even after user setup is complete. The defined component should be used for supervision purposes
+    only. The component must be part of a system app. -->
+    <!--<string name="config_defaultSupervisionProfileOwnerComponent" translatable="false">com.google.android.gms/.kids.account.receiver.ProfileOwnerReceiver</string>-->
 
     <!-- The component name for the system-wide captions manager service.
          This service must be trusted, as the system binds to it and keeps it running.
@@ -207,8 +230,54 @@
      -->
     <string name="config_defaultWellbeingPackage" translatable="false">com.google.android.apps.wellbeing</string>
 
+    <!-- Package name that provides Emergency Dialer -->
+    <!--<string name="config_emergency_dialer_package" translatable="false">com.google.android.apps.safetyhub</string>-->
+
+    <!-- Intent key for the package name keys -->
+    <!--<string name="config_feedbackIntentExtraKey" translatable="false">EXTRA_FEEDBACK_PSD_KEYS</string>-->
+
+    <!-- Intent key for package name values -->
+    <!--<string name="config_feedbackIntentNameKey" translatable="false">EXTRA_FEEDBACK_PSD_VALUES</string>-->
+
+    <!-- Intent key for the package name keys -->
+    <!--<string name="config_helpIntentExtraKey" translatable="false">EXTRA_PSD_KEYS</string>-->
+
+    <!-- Intent key for package name values -->
+    <!--<string name="config_helpIntentNameKey" translatable="false">EXTRA_PSD_VALUES</string>-->
+
+    <!-- Name for the set of keys associating package names -->
+    <!--<string name="config_helpPackageNameKey" translatable="false">genie-eng:app_pkg_name</string>-->
+
+    <!-- Name for the set of values of package names -->
+    <!--<string name="config_helpPackageNameValue" translatable="false">com.google.android.settings.gphone</string>-->
+
     <!-- Specifies the path that is used by AdaptiveIconDrawable class to crop launcher icons. -->
     <string name="config_icon_mask" translatable="false">"M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z"</string>
+
+    <!-- The package name for the incident report approver app.
+        This app is usually PermissionController or an app that replaces it.  When
+        a bugreport or incident report with EXPLICT-level sharing flags is going to be
+        shared, this app will be sent the PENDING_INCIDENT_REPORTS_CHANGED broadcast.
+    -->
+    <!--<string name="config_incidentReportApproverPackage" translatable="false">com.google.android.permissioncontroller</string>-->
+
+
+    <!-- Package name that will receive an explicit manifest broadcast for
+         android.os.action.POWER_SAVE_MODE_CHANGED. -->
+    <!--<string name="config_powerSaveModeChangedListenerPackage" translatable="false">com.google.android.flipendo</string>-->
+
+    <!-- The package name for the default retail demo app.
+         This package must be trusted, as it has the permissions to query the usage stats on the
+         device.
+         Example: "com.google.android.retaildemo"
+     -->
+    <!--<string name="config_retailDemoPackage" translatable="false">com.google.android.retaildemo</string>-->
+
+    <!-- The package signature hash for the default retail demo app.
+         This package must be trusted, as it has the permissions to query the usage stats on the
+         device.
+     -->
+    <!--<string name="config_retailDemoPackageSignature" translatable="false">6547c73dee150c103980bfdffe55cc9a011d785dd694a5f99afd8205bcaf1f80</string>-->
 
     <!-- Package name of the on-device intelligent processor for ambient audio.
         Ambient audio is the sound surrounding the device captured by the DSP
