@@ -194,6 +194,9 @@
 	<!-- Whether this device is supporting the camera toggle -->
     <bool name="config_supportsMicToggle">true</bool>
 
+    <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
+    <bool name="config_useRoundIcon">true</bool>
+
     <!-- Default number of days to retain for the automatic storage manager. -->
     <integer translatable="false" name="config_storageManagerDaystoRetainDefault">60</integer>
 </resources>
