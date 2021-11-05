@@ -20,6 +20,10 @@
         <item>com.google.android.googlequicksearchbox:com.google.android.apps.gsa.plugins.podcastplayer.channel</item>
     </string-array>
 
+    <!-- List of packages that can use the Conversation space for their category messages
+    notifications until they target R -->
+    <!--<string-array name="config_notificationMsgPkgsAllowedAsConvos" translatable="false"/>-->
+
     <!-- Names of packages that should not be suspended when personal use is blocked by policy. -->
     <string-array name="config_packagesExemptFromSuspension" translatable="false">
         <item>com.google.android.apps.wellbeing</item>
