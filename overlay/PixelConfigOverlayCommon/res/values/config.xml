@@ -183,7 +183,7 @@
     <bool name="config_buttonTextAllCaps">false</bool>
 
     <!-- Flag indicating whether we should enable smart battery. -->
-	<bool name="config_smart_battery_available">true</bool>
+    <bool name="config_smart_battery_available">true</bool>
 
     <!-- Whether this device is supporting the microphone toggle -->
     <bool name="config_supportsCamToggle">true</bool>
