@@ -63,7 +63,7 @@ if [ -f "${MY_DIR}/proprietary-files.txt" ]; then
     sha1sum=$(sha1sum "${out}"/proprietary/system/priv-app/GoogleExtServices/GoogleExtServices.apk | awk '{print $1}')
 
     sed -i "s|# Google extension services.*|# Google extension services (extracted from com.google.android.extservices.apex) - from ${name} ${id}|" "${MY_DIR}/proprietary-files.txt"
-    sed -i "s|-system/priv-app/GoogleExtServices/GoogleExtServices.apk;PRESIGNED.*|-system/priv-app/GoogleExtServices/GoogleExtServices.apk;PRESIGNED\|${sha1sum}|" "${MY_DIR}/proprietary-files.txt"
+    sed -i "s|-system/priv-app/GoogleExtServices/GoogleExtServices.apk.*|-system/priv-app/GoogleExtServices/GoogleExtServices.apk;OVERRIDES=ExtServices;PRESIGNED\|${sha1sum}|" "${MY_DIR}/proprietary-files.txt"
 fi
 
 echo "Updated GoogleExtServices.apk!"

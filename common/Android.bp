@@ -43,6 +43,7 @@ android_app_import {
 	name: "GoogleExtServices",
 	owner: "gms",
 	apk: "proprietary/system/priv-app/GoogleExtServices/GoogleExtServices.apk",
+	overrides: ["ExtServices"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,

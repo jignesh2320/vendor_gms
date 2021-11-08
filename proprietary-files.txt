@@ -91,6 +91,6 @@ product/etc/sysconfig/pixel_2016_exclusive.xml|f4eeeeec14b22b913d865ba5895dcca9f
 -system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk;OVERRIDES=DocumentsUI;PRESIGNED
 
 # Google extension services (extracted from com.google.android.extservices.apex) - from oriole SD1A.210817.036
--system/priv-app/GoogleExtServices/GoogleExtServices.apk;PRESIGNED|b9db71197fecf9886207af70a2a798fde8b23c4c
+-system/priv-app/GoogleExtServices/GoogleExtServices.apk;OVERRIDES=ExtServices;PRESIGNED|b9db71197fecf9886207af70a2a798fde8b23c4c
 
 -product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk;PRESIGNED
