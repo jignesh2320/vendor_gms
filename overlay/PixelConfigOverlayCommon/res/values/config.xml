@@ -167,10 +167,10 @@
     <string name="config_defaultOnDeviceSpeechRecognitionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSpeechRecognitionService</string>
 
     <!-- The action name for the default profcollect report uploader app. -->
-    <string name="config_defaultProfcollectReportUploaderAction" translatable="false">com.google.android.apps.betterbug.intent.action.UPLOAD_PROFILE</string>
+    <!--<string name="config_defaultProfcollectReportUploaderAction" translatable="false">com.google.android.apps.betterbug.intent.action.UPLOAD_PROFILE</string>-->
 
     <!-- The package name for the default profcollect report uploader app. This app must be allowlisted. -->
-    <string name="config_defaultProfcollectReportUploaderApp" translatable="false">com.google.android.apps.internal.betterbug</string>
+    <!--<string name="config_defaultProfcollectReportUploaderApp" translatable="false">com.google.android.apps.internal.betterbug</string>-->
 
     <!-- The package name for the system's search ui service.
          This service returns search results when provided with an input string.
