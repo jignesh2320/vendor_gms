@@ -32,6 +32,8 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlay2021 \
     PixelConfigOverlayCommon \
+    PixelSetupWizardOverlay \
+    PixelSetupWizardStringsOverlay \
     SystemUIGXOverlay
 
 # Pixel properties
