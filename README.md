@@ -58,6 +58,7 @@ FilesGoogle
 Additionally the following Pixel specific apps are included:
 ```
 MarkupGoogle
+DeviceIntelligenceNetworkPrebuilt
 DevicePersonalizationPrebuiltPixel2020
 NexusLauncherRelease
 PixelSetupWizard
