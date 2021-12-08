@@ -217,6 +217,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.tetheringentitlement">
+        <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
         <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.TETHER_PRIVILEGED"/>
