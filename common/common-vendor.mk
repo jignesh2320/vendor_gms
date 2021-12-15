@@ -70,6 +70,7 @@ PRODUCT_PACKAGES += \
     PrebuiltBugle \
     PrebuiltGmsCoreSc \
     AndroidPlatformServices \
+    SettingsIntelligenceGooglePrebuilt \
     SetupWizardPrebuilt \
     TurboPrebuilt \
     Velvet \
