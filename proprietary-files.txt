@@ -74,8 +74,6 @@ product/etc/sysconfig/pixel_experience_2019_midyear.xml
 product/etc/sysconfig/pixel_experience_2019.xml
 product/etc/sysconfig/pixel_experience_2020_midyear.xml
 product/etc/sysconfig/pixel_experience_2020.xml
-product/etc/sysconfig/pixel_experience_2021_midyear.xml
-product/etc/sysconfig/pixel_experience_2022_midyear.xml
 system/etc/permissions/privapp-permissions-google.xml
 system_ext/etc/permissions/privapp-permissions-google-se.xml
 
@@ -85,7 +83,7 @@ product/etc/sysconfig/pixel_2016_exclusive.xml|f4eeeeec14b22b913d865ba5895dcca9f
 # Pixel application packages
 -product/app/MarkupGoogle/MarkupGoogle.apk;PRESIGNED
 -product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk;PRESIGNED
--product/priv-app/DevicePersonalizationPrebuiltPixel2021/DevicePersonalizationPrebuiltPixel2021.apk;PRESIGNED
+-product/priv-app/DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk;PRESIGNED|c77ad00295b51fb1ef4ca42ca6e0e7acebb0ffa7
 -product/priv-app/FilesPrebuilt/FilesPrebuilt.apk;PRESIGNED
 -product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk;OVERRIDES=SettingsIntelligence;PRESIGNED
 -system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk;PRESIGNED
