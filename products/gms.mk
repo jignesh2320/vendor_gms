@@ -27,6 +27,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Pixel RRO overlay packages
 PRODUCT_PACKAGES += \
     GoogleConfigOverlay \
+    GoogleSettingsOverlay \
     PixelConfigOverlay2018 \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
