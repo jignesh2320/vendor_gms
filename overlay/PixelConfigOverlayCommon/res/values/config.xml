@@ -77,8 +77,9 @@
     <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
     <bool name="config_useRoundIcon">true</bool>
 
-    <!-- Flag indicating whether the volume panel should show remote sessions. -->
-    <bool name="config_volumeShowRemoteSessions">false</bool>
+    <!-- Flag indicating whether platform level volume adjustments are enabled for remote sessions
+         on grouped devices. -->
+    <bool name="config_volumeAdjustmentForRemoteGroupSessions">false</bool>
 
     <!-- Corner radius for bottom sheet system dialogs -->
     <dimen name="config_bottomDialogCornerRadius">16dp</dimen>
