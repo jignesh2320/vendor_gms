@@ -11,7 +11,7 @@
         <item name="android:statusBarColor">?android:colorBackground</item>
         <item name="android:navigationBarColor">?android:colorBackground</item>
         <item name="android:windowLightStatusBar">true</item>
-        <item name="android:colorSecondary">?android:^attr-private/colorSwitchThumbNormal</item>
+        <item name="android:colorSecondary">?android:^attr-private/colorAccentSecondary</item>
         <item name="android:windowLightNavigationBar">true</item>
         <item name="android:navigationBarDividerColor">?android:strokeColor</item>
     </style>
