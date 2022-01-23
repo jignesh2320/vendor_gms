@@ -37,4 +37,8 @@
             5 - Go to assistant (Settings.Secure.ASSISTANT)
     -->
     <integer name="config_longPressOnPowerBehavior">1</integer>
+
+    <!-- Flag indicating whether platform level volume adjustments are enabled for remote sessions
+         on grouped devices. -->
+    <bool name="config_volumeAdjustmentForRemoteGroupSessions">true</bool>
 </resources>
