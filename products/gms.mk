@@ -35,6 +35,7 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlayCommon \
     PixelSetupWizardOverlay \
     PixelSetupWizardStringsOverlay \
+    PixelDocumentsUIGoogleOverlay \
     SystemUIGXOverlay
 
 # Pixel properties
