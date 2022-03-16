@@ -57,7 +57,7 @@
     <!--<bool name="config_fingerprintSupportsGestures">true</bool>-->
 
     <!-- When true, enables the allowlisted app to upload profcollect reports. -->
-    <!--<bool name="config_profcollectReportUploaderEnabled">false</bool>-->
+    <!--<bool name="config_profcollectReportUploaderEnabled">true</bool>-->
 
     <!-- Whether to send a custom package name with the PSD.-->
     <!--<bool name="config_sendPackageName">false</bool>-->
