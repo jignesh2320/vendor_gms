@@ -1,41 +1,41 @@
 #!/bin/bash
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 DEBUG=0
-if [ ${DEBUG} != 0 ]; then
+if [[ ${DEBUG} != 0 ]]; then
     log="/dev/tty"
 else
     log="/dev/null"
 fi
 
-if [ -z "${SRC}" ] && [ -z "${1}" ]; then
+if [[ -z "${SRC}" ]] && [[ -z "${1}" ]]; then
     echo "Missing source"
     exit
-elif [ -z "${SRC}" ]; then
+elif [[ -z "${SRC}" ]]; then
     echo "Using '${1}' as source"
     SRC="${1}"
 fi
 
-if [ -z "${ANDROID_ROOT}" ] || [ -z "${OUTDIR}" ] && [ -z "${2}" ]; then
+if [[ -z "${ANDROID_ROOT}" ]] || [[ -z "${OUTDIR}" ]] && [[ -z "${2}" ]]; then
     echo "Missing outdir, assuming: './common/'"
     out="./common/"
-elif [ -z "${ANDROID_ROOT}" ] || [ -z "${OUTDIR}" ]; then
+elif [[ -z "${ANDROID_ROOT}" ]] || [[ -z "${OUTDIR}" ]]; then
     echo "Using '${2}' as outdir"
     out="${2}"
 else
     out="${ANDROID_ROOT}/${OUTDIR}"
 fi
 
-if [ -z "${MY_DIR}" ]; then
+if [[ -z "${MY_DIR}" ]]; then
     echo "Missing MY_DIR, assuming: './'"
     MY_DIR = "./"
 fi
 
-if [ ! -f "${SRC}"/system/system/apex/com.google.android.extservices.apex ]; then
+if [[ ! -f "${SRC}"/system/system/apex/com.google.android.extservices.apex ]]; then
     echo "Missing the extservices apex at: '${SRC}/system/system/apex/com.google.android.extservices.apex'"
     exit
 fi
@@ -48,7 +48,7 @@ apktool d "${SRC}"/system/system/apex/com.google.android.extservices.apex -o "${
 # Unpack the resulting apex_payload.img
 7z e "${TMPDIR}"/out/unknown/apex_payload.img -o"${TMPDIR}" > "${log}"
 # Save the GoogleExtServices.apk
-if [ ! -d "${out}"/proprietary/system/priv-app/GoogleExtServices ]; then
+if [[ ! -d "${out}"/proprietary/system/priv-app/GoogleExtServices ]]; then
     mkdir -p "${out}"/proprietary/system/priv-app/GoogleExtServices
 fi
 cp "${TMPDIR}"/GoogleExtServices.apk "${out}"/proprietary/system/priv-app/GoogleExtServices/GoogleExtServices.apk
@@ -57,7 +57,7 @@ cp "${TMPDIR}"/GoogleExtServices.apk "${out}"/proprietary/system/priv-app/Google
 rm -rf "${TMPDIR}"
 
 # Pin the updated file in proprietary-files.txt
-if [ -f "${MY_DIR}/proprietary-files.txt" ]; then
+if [[ -f "${MY_DIR}/proprietary-files.txt" ]]; then
     name=$(cat "${SRC}"/product/etc/build.prop | grep ro.product.product.name | sed 's|=| |' | awk '{print $2}')
     id=$(cat "${SRC}"/product/etc/build.prop | grep ro.product.build.id | sed 's|=| |' | awk '{print $2}')
     sha1sum=$(sha1sum "${out}"/proprietary/system/priv-app/GoogleExtServices/GoogleExtServices.apk | awk '{print $1}')

@@ -1,16 +1,16 @@
 #!/bin/bash
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-if [ -z "${1}" ] || [ -z "${2}" ]; then
+if [[ -z "${1}" ]] || [[ -z "${2}" ]]; then
     echo "Usage: diff_overlays.sh /path/to/dump1 /path/to/dump2"
     exit
 fi
 
-if [ -d out ]; then
+if [[ -d out ]]; then
     echo "[WARNING] Out is not empty"
 fi
 
@@ -22,11 +22,11 @@ unversioned_overlays="GoogleConfigOverlay PixelConfigOverlay2018 PixelConfigOver
 
 for i in ${unversioned_overlays}
 do
-    if [ ! -f "${1}"/product/overlay/"${i}".apk ]; then
+    if [[ ! -f "${1}"/product/overlay/"${i}".apk ]]; then
         echo ""${1}"/product/overlay/"${i}".apk does not exit!"
     fi
 
-    if [ ! -f "${2}"/product/overlay/"${i}".apk ]; then
+    if [[ ! -f "${2}"/product/overlay/"${i}".apk ]]; then
         echo ""${2}"/product/overlay/"${i}".apk does not exit!"
     fi
 
@@ -56,11 +56,11 @@ do
     apktool d "${2}"/product/overlay/"${i}".apk -o out/2/"${i}" > /dev/null
 
 
-    if [ ! -d out/1/"${i}" ]; then
+    if [[ ! -d out/1/"${i}" ]]; then
         echo "${i} does not exit on device 1!"
     fi
 
-    if [ ! -d out/2/"${i}" ]; then
+    if [[ ! -d out/2/"${i}" ]]; then
         echo "${i} does not exit on device 2!"
     fi
 

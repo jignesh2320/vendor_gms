@@ -6,23 +6,23 @@
 #
 
 DEBUG=0
-if [ ${DEBUG} != 0 ]; then
+if [[ ${DEBUG} != 0 ]]; then
     log="/dev/tty"
 else
     log="/dev/null"
 fi
 
-if [ -z "${1}" ]; then
+if [[ -z "${1}" ]]; then
     echo "Usage: bash update_PixelSetupWizardStringsOverlay.sh /path/to/PixelSetupWizard.apk"
     exit
 fi
 
-if [ ! -f "${1}" ]; then
+if [[ ! -f "${1}" ]]; then
     echo "Can not find a file at '${1}'"
     exit
 fi
 
-if [ ! -d overlay/PixelSetupWizardStringsOverlay ]; then
+if [[ ! -d overlay/PixelSetupWizardStringsOverlay ]]; then
     echo "./overlay/PixelSetupWizardStringsOverlay does not exist"
     exit
 fi
@@ -40,7 +40,7 @@ for strings in $(find "${TMPDIR}"/out/ -name strings.xml); do
     fi
 
     target_path=overlay/PixelSetupWizardStringsOverlay/$(echo "${strings}" | sed "s|${TMPDIR}/out/||" | sed "s|/strings.xml||")
-    if [ ! -d "${target_path}" ]; then
+    if [[ ! -d "${target_path}" ]]; then
         mkdir -p "${target_path}"
     fi
 
