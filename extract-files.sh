@@ -79,3 +79,6 @@ sed -i "s|# All unpinned files are extracted from.*|# All unpinned files are ext
 source "${MY_DIR}/tools/extract-GoogleExtServices.sh"
 
 "${MY_DIR}/setup-makefiles.sh"
+
+# Update PixelSetupWizardStringsOverlay
+"${MY_DIR}/tools/update_PixelSetupWizardStringsOverlay.sh" "${MY_DIR}/common/proprietary/system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk"
