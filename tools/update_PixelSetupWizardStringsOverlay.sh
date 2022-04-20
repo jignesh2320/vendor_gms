@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -34,6 +34,11 @@ apktool d ${1} -o "${TMPDIR}"/out > "${log}"
 
 rm -rf overlay/PixelSetupWizardStringsOverlay/res
 for strings in $(find "${TMPDIR}"/out/ -name strings.xml); do
+    # If no string contains "Pixel" skip this language
+    if [[ -z $(cat "${strings}" | grep "Pixel") ]]; then
+        continue
+    fi
+
     target_path=overlay/PixelSetupWizardStringsOverlay/$(echo "${strings}" | sed "s|${TMPDIR}/out/||" | sed "s|/strings.xml||")
     if [ ! -d "${target_path}" ]; then
         mkdir -p "${target_path}"
@@ -43,12 +48,10 @@ for strings in $(find "${TMPDIR}"/out/ -name strings.xml); do
     echo '<?xml version="1.0" encoding="utf-8"?>' >> "${target_path}"/strings.xml
     echo '<resources>' >> "${target_path}"/strings.xml
 
-    echo "    " $(cat "${strings}" | grep '<string name="air_gestures_opt_in_info_text">') >> $target_path/strings.xml
-    echo "    " $(cat "${strings}" | grep '<string name="bc_welcome_message">') >> $target_path/strings.xml
-    echo "    " $(cat "${strings}" | grep '<string name="deferred_setup_wizard_title">') >> $target_path/strings.xml
-    echo "    " $(cat "${strings}" | grep '<string name="device_name">') >> $target_path/strings.xml
-    echo "    " $(cat "${strings}" | grep '<string name="setup_wizard_title">') >> $target_path/strings.xml
-    echo "    " $(cat "${strings}" | grep '<string name="smart_always_on_display_opt_in_info_text">') >> $target_path/strings.xml
+    # Find all strings including "Pixel" and write them to strings.xml
+    for string in $(cat "${strings}" | grep "Pixel" | sed 's/>/ /g' | awk '{print $2}'); do
+        echo "    " $(cat "${strings}" | grep "${string}") >> $target_path/strings.xml
+    done
 
     echo '</resources>' >> "${target_path}"/strings.xml
 
@@ -57,11 +60,3 @@ done
 
 # Clear the temporary working directory
 rm -rf "${TMPDIR}"
-
-# Strings including Pixel
-#<string name="air_gestures_opt_in_info_text">Pixel uses Motion Sense to detect nearby movement. It does not use your camera, mic, or location.</string>
-#<string name="bc_welcome_message">Welcome to your Pixel</string>
-#<string name="deferred_setup_wizard_title">Finish setting up Pixel</string>
-#<string name="device_name">Pixel</string>
-#<string name="setup_wizard_title">Pixel Setup</string>
-#<string name="smart_always_on_display_opt_in_info_text">Pixel uses Motion Sense to detect nearby movement. It does not use your camera, mic, or location.</string>
