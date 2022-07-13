@@ -1,4 +1,4 @@
-# All unpinned files are extracted from oriole SP2A.220405.004
+# All unpinned files are extracted from oriole SQ3A.220705.003
 
 # GMS mandatory core packages
 # GoogleCalendarSyncAdapter, not exisiting on pixel because it is overridden by CalendarGooglePrebuilt
@@ -91,7 +91,7 @@ product/etc/sysconfig/pixel_2016_exclusive.xml|f4eeeeec14b22b913d865ba5895dcca9f
 -system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk;PRESIGNED
 -system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk;OVERRIDES=DocumentsUI;PRESIGNED
 
-# Google extension services (extracted from com.google.android.extservices.apex) - from oriole SP2A.220405.004
+# Google extension services (extracted from com.google.android.extservices.apex) - from oriole SQ3A.220705.003
 -system/priv-app/GoogleExtServices/GoogleExtServices.apk;OVERRIDES=ExtServices;PRESIGNED|271919f1d99139c06d3a95a9ffeb579f9ba33e54
 
 -product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk;PRESIGNED
