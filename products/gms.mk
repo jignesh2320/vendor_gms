@@ -6,17 +6,21 @@
 
 # GMS RRO overlay packages
 PRODUCT_PACKAGES += \
+    GmsConfigOverlayASI \
     GmsConfigOverlayCommon \
     GmsConfigOverlayComms \
     GmsConfigOverlayContactsProvider \
     GmsConfigOverlayGeotz \
     GmsConfigOverlayGSA \
+    GmsConfigOverlayPersonalSafety \
     GmsConfigOverlayPhotos \
     GmsConfigOverlaySettings \
     GmsConfigOverlaySettingsProvider \
+    GmsConfigOverlaySystemUI \
     GmsConfigOverlayTelecom \
     GmsConfigOverlayTeleService \
-    GmsConfigOverlayTurbo
+    GmsConfigOverlayTurbo \
+    GmsConfigOverlayVAS
 
 # GMS properties
 PRODUCT_PRODUCT_PROPERTIES += \

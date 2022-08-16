@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2012, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Package name for default widget [DO NOT TRANSLATE] -->
+    <string name="widget_default_package_name" translatable="false"></string>
+
+    <!-- Class name for default widget [DO NOT TRANSLATE] -->
+    <string name="widget_default_class_name" translatable="false"></string>
+
+    <!-- Apps that are authorized to access shared accounts -->
+    <string name="config_appsAuthorizedForSharedAccounts" translatable="false">;com.android.vending;com.android.settings;</string>
+
+    <!-- System settings intelligence package name -->
+    <string name="config_systemSettingsIntelligence" translatable="false">
+        com.android.settings.intelligence
+    </string>
+
+    <!-- The list of IMEs which should be disabled until used.
+         This function suppresses update notifications for these pre-installed apps.
+         We need to set this configuration carefully that they should not have functionarities
+         other than "IME" or "Spell Checker". In InputMethodManagerService,
+         the listed IMEs are disabled until used when all of the following conditions are met.
+         1. Not selected as an enabled IME in the Settings
+         2. Not selected as a spell checker in the Settings
+         3. Installed
+         4. A pre-installed IME
+         5. Not enabled
+         And the disabled_until_used state for an IME is released by InputMethodManagerService
+         when the IME is selected as an enabled IME. -->
+    <string-array name="config_disabledUntilUsedPreinstalledImes" translatable="false">
+        <item>com.google.android.inputmethod.latin</item>
+    </string-array>
+
     <!-- For Factory Reset Protection -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
@@ -53,6 +101,10 @@
          Used by ChooserActivity. -->
     <string name="config_defaultNearbySharingComponent" translatable="false">com.google.android.gms/com.google.android.gms.nearby.sharing.ShareSheetActivity</string>
 
+    <!-- Component name that accepts settings intents for saved devices.
+         Used by FastPairSettingsFragment. -->
+    <string translatable="false" name="config_defaultNearbyFastPairSettingsDevicesComponent">com.google.android.gms/com.google.android.gms.nearby.discovery.devices.SavedDevicesSettingsActivity</string>
+
     <!-- Package name of the required service extension package. -->
     <!-- This configuration is provided by the Mainline module distribution -->
 
@@ -86,8 +138,28 @@
     <!-- The package name for the default wellbeing application. [DO NOT TRANSLATE] -->
     <string name="config_defaultWellbeingPackage" translatable="false">com.google.android.apps.wellbeing</string>
 
+    <!-- The name of the package that will hold the game service role. -->
+    <string name="config_systemGameService" translatable="false">com.google.android.gms</string>
+
     <!-- The name of the package that will hold the system activity recognizer role. -->
     <string name="config_systemActivityRecognizer" translatable="false">com.google.android.gms</string>
+
+    <!-- Messages that should not be shown to the user during face auth enrollment. This should be
+     used to hide messages that may be too chatty or messages that the user can't do much about.
+     Entries are defined in android.hardware.biometrics.face@1.0 types.hal -->
+    <!-- Same as the above, but are defined by vendorCodes -->
+
+    <!-- Messages that should not be shown to the user during face authentication, on keyguard.
+         This includes both lockscreen and bouncer. This should be used to hide messages that may be
+         too chatty or messages that the user can't do much about. Entries are defined in
+         android.hardware.biometrics.face@1.0 types.hal -->
+    <!-- Same as the above, but are defined by vendorCodes -->
+
+    <!-- Messages that should not be shown to the user during face authentication, on
+     BiometricPrompt. This should be used to hide messages that may be too chatty or messages that
+     the user can't do much about. Entries are defined in
+     android.hardware.biometrics.face@1.0 types.hal -->
+    <!-- Same as the above, but are defined by vendorCodes -->
 
     <string-array name="config_integrityRuleProviderPackages" translatable="false">
         <item>com.android.vending</item>
@@ -104,6 +176,30 @@
 
     <!-- The package name for the fast pair provider application. [DO NOT TRANSLATE] -->
     <string name="config_systemCompanionDeviceProvider" translatable="false">com.google.android.gms</string>
+
+    <!-- A list of packages managing companion device(s) by the same manufacturers as the main
+         device. It will not create the association without prompt if the association has been
+         called multiple times in a short period.
+         Note that config_companionDeviceManagerPackage and config_companionDeviceCerts are
+         parallel arrays.
+     -->
+
+    <!-- A list of SHA256 Certificates managing companion device(s) by the same manufacturers as
+         the main device. It will fall back to showing a prompt if the association has been called
+         multiple times in a short period.
+         Note that config_companionDeviceCerts and config_companionDeviceManagerPackage are parallel
+         arrays.
+         Example: "1A:2B:3C:4D"
+     -->
+
+    <!-- Flag indicating if help links for Settings app should be enabled. -->
+    <bool name="config_settingsHelpLinksEnabled">false</bool>
+
+    <!-- The name of the package that will hold the device management role and its certificate's SHA256. -->
+    <string name="config_devicePolicyManagement" translatable="false">com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58</string>
+
+    <!-- The name of the package that will handle updating the device management role. -->
+    <string name="config_devicePolicyManagementUpdater" translatable="false">com.google.android.gms</string>
 
     <!-- An array of packages for which notifications cannot be blocked. -->
     <string-array name="config_nonBlockableNotificationPackages" translatable="false">
@@ -125,6 +221,8 @@
 
     <!-- The component to be the default supervisor profile owner [DO NOT TRANSLATE] -->
     <string name="config_defaultSupervisionProfileOwnerComponent" translatable="false">com.google.android.gms/.kids.account.receiver.ProfileOwnerReceiver</string>
+
+    <string name="config_systemSupervision" translatable="false">com.google.android.gms.supervision</string>
 
     <!-- Whether to only install system packages on a user if they're whitelisted for that user
          type. These are flags and can be freely combined.
@@ -153,30 +251,4 @@
     <string-array name="config_accessibility_allowed_install_source" translatable="false">
         <item>com.android.vending</item>
     </string-array>
-
-    <!-- Update the default behavior of power button to be compatible with that of previous Android
-         releases. If this behavior is not desired, change the value of the following three
-         configurations as needed.-->
-
-    <!-- Control the behavior when the user long presses the power button.
-            0 - Nothing
-            1 - Global actions menu
-            2 - Power off (with confirmation)
-            3 - Power off (without confirmation)
-            4 - Go to voice assist
-            5 - Go to assistant (Settings.Secure.ASSISTANT)
-    -->
-    <integer name="config_longPressOnPowerBehavior">1</integer>
-
-    <!-- Whether the setting to change long press on power behaviour from default to assistant (5)
-         is available in Settings.
-     -->
-    <bool name="config_longPressOnPowerForAssistantSettingAvailable">false</bool>
-
-    <!-- Control the behavior when the user presses the power and volume up buttons together.
-            0 - Nothing
-            1 - Mute toggle
-            2 - Global actions menu
-    -->
-    <integer name="config_keyChordPowerVolumeUp">0</integer>
 </resources>

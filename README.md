@@ -10,6 +10,7 @@ GMS mandatory core packages:
 AndroidAutoStub
 AndroidPlatformServices
 ConfigUpdater
+FamilyLinkParentalControls
 GoogleExtShared
 GoogleFeedback
 GoogleLocationHistory
@@ -20,7 +21,6 @@ GooglePrintRecommendationService
 GoogleRestore
 GoogleServicesFramework
 GoogleCalendarSyncAdapter
-GoogleContactsSyncAdapter
 SpeechServicesByGoogle
 GmsCore
 Phonesky
@@ -45,6 +45,7 @@ YouTube
 
 GMS optional application packages
 ```
+AndroidSystemIntelligence_Features
 CalendarGoogle
 DeskClockGoogle
 LatinImeGoogle
@@ -52,7 +53,6 @@ TagGoogle
 talkback
 Keep
 CalculatorGoogle
-FilesGoogle
 ```
 
 Additionally the following Pixel specific apps are included:
