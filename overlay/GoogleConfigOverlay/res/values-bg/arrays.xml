@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <array name="face_acquired_vendor" />
+    <string-array name="face_error_vendor">
+        <item>Сертификатът е изтекъл</item>
+        <item>Сензорът е временно деактивиран</item>
+        <item>Грешка при калибрирането</item>
+        <item>Функцията за отключване с лице не е налице. Телефонът е твърде горещ.</item>
+        <item>Трябва да настроите отново функцията за отключване с лице</item>
+    </string-array>
+</resources>
