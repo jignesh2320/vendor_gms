@@ -32,7 +32,12 @@ fi
 
 if [[ -z "${MY_DIR}" ]]; then
     echo "Missing MY_DIR, assuming: './'"
-    MY_DIR = "./"
+    MY_DIR="./"
+fi
+
+if [[ -z $(which binwalk) ]]; then
+    echo "Missing binwalk. Skip extracting GoogleExtServices"
+    exit
 fi
 
 if [[ ! -f "${SRC}"/system/system/apex/com.google.android.extservices.apex ]]; then
@@ -44,9 +49,11 @@ fi
 TMPDIR=$(mktemp -d)
 
 # Unpack the apex
-apktool d "${SRC}"/system/system/apex/com.google.android.extservices.apex -o "${TMPDIR}"/out > "${log}"
+binwalk --extract --directory="${TMPDIR}" "${SRC}"/system/system/apex/com.google.android.extservices.apex > "${log}"
+binwalk --extract --directory="${TMPDIR}" "${TMPDIR}"/_com.google.android.extservices.apex.extracted/original_apex > "${log}"
+
 # Unpack the resulting apex_payload.img
-7z e "${TMPDIR}"/out/unknown/apex_payload.img -o"${TMPDIR}" > "${log}"
+7z e "${TMPDIR}"/_com.google.android.extservices.apex.extracted/_original_apex.extracted/apex_payload.img -o"${TMPDIR}" > "${log}"
 # Save the GoogleExtServices.apk
 if [[ ! -d "${out}"/proprietary/system/priv-app/GoogleExtServices ]]; then
     mkdir -p "${out}"/proprietary/system/priv-app/GoogleExtServices
