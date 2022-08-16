@@ -4,6 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="safety_protection_display_text">&lt;font face=\"google-sans\">იცავს &lt;/font>&lt;font face=\"google-sans-medium\">Android&lt;/font></string>
     <string name="harmful_app_warning_title">Play Protect-ის გაფრთხილება</string>
     <string name="biometric_app_setting_name">სახით ან თითის ანაბეჭდით</string>
     <string name="biometric_or_screen_lock_app_setting_name">გამოიყენეთ სახე, თითის ანაბეჭდი ან ეკრანის განბლოკვის ნიმუში</string>

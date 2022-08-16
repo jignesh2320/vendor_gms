@@ -4,6 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="safety_protection_display_text">&lt;font face=\"google-sans\">Được &lt;/font>&lt;font face=\"google-sans-medium\">Android&lt;/font>&lt;font face=\"google-sans\"> bảo vệ&lt;/font></string>
     <string name="harmful_app_warning_title">Cảnh báo của Play Protect</string>
     <string name="biometric_app_setting_name">Dùng khuôn mặt hoặc vân tay</string>
     <string name="biometric_or_screen_lock_app_setting_name">Dùng khuôn mặt, vân tay hoặc phương thức khóa màn hình</string>

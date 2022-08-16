@@ -4,6 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="safety_protection_display_text">&lt;font face=\"google-sans\">Android দ্বারা &lt;/font>&lt;font face=\"google-sans-medium\">সুরক্ষিত&lt;/font></string>
     <string name="harmful_app_warning_title">Play নিরাপত্তা সতর্কতা</string>
     <string name="biometric_app_setting_name">মুখ অথবা আঙ্গুলের ছাপ ব্যবহার করুন</string>
     <string name="biometric_or_screen_lock_app_setting_name">মুখ, আঙ্গুলের ছাপ অথবা স্ক্রিন লক ব্যবহার করুন</string>

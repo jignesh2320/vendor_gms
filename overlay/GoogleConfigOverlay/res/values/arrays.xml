@@ -4,11 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- List containing the allowed install sources for accessibility service. -->
-    <string-array name="config_accessibility_allowed_install_source" translatable="false">
-        <item>com.android.vending</item>
-    </string-array>
-
     <!-- Additional non-platform defined secure settings exposed to Instant Apps -->
     <string-array name="config_allowedSecureInstantAppSettings">
         <item>advertising_id</item>

@@ -11,6 +11,9 @@
     -->
     <integer name="config_keyChordPowerVolumeUp">2</integer>
 
+    <!-- ComponentName of the default dream (Settings.Secure.DEFAULT_SCREENSAVER_COMPONENT) -->
+    <string name="config_dreamsDefaultComponent" translatable="false">com.google.android.deskclock/com.android.deskclock.Screensaver</string>
+
     <!-- Allow the gesture power + volume up to change the ringer mode while the device
          is interactive. -->
     <bool name="config_volumeHushGestureEnabled">false</bool>

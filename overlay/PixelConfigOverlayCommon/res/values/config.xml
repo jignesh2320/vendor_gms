@@ -44,12 +44,6 @@
      -->
     <string name="config_defaultWellbeingPackage" translatable="false">com.google.android.apps.wellbeing</string>
 
-    <!-- The component name for the system-wide captions service.
-         This service must be trusted, as it controls part of the UI of the volume bar.
-         Example: "com.android.captions/.SystemCaptionsService"
-    -->
-    <string name="config_defaultSystemCaptionsService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.captions.CaptionsService</string>
-
     <!-- The component name for the system-wide captions manager service.
          This service must be trusted, as the system binds to it and keeps it running.
          Example: "com.android.captions/.SystemCaptionsManagerService"

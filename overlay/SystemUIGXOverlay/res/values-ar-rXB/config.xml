@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- package name of a built-in camera app to use to restrict implicit intent resolution
+         when the double-press power gesture is used. Ignored if empty. -->
+    <string name="config_cameraGesturePackage" translatable="false">‏‮com.google.android.GoogleCamera‬‏</string>
+</resources>

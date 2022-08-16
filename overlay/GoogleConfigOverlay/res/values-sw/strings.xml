@@ -4,6 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="safety_protection_display_text">&lt;font face=\"google-sans\">Inalindwa na &lt;/font>&lt;font face=\"google-sans-medium\">Android&lt;/font></string>
     <string name="harmful_app_warning_title">Ilani ya Play Protect</string>
     <string name="biometric_app_setting_name">Tumia uso au alama ya kidole</string>
     <string name="biometric_or_screen_lock_app_setting_name">Tumia uso, alama ya kidole au mbinu yako ya kufunga skrini</string>

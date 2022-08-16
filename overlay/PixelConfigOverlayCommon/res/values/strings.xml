@@ -4,6 +4,13 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="config_ambientContextEventArrayExtraKey">EVENT_ARRAY</string>
+    <string name="config_ambientContextPackageNameExtraKey">PACKAGE_NAME</string>
+    <string name="config_defaultAmbientContextConsentComponent">com.google.android.as/com.google.android.apps.miphone.aiai.ambientcontext.ui.ConsentActivity</string>
+    <string name="config_defaultAmbientContextDetectionService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAmbientContextDetectionService</string>
+    <string name="config_defaultWallpaperEffectsGenerationService">com.google.android.as/com.google.android.apps.miphone.aiai.app.wallpapereffects.AiAiWallpaperEffectsGenerationService</string>
+    <string name="config_systemAppProtectionService">com.google.android.odad</string>
+    <string name="config_systemSupervision">com.google.android.gms.supervision</string>
     <string name="android_upgrading_title">Pixel is updating…</string>
     <string name="android_start_title">Pixel is starting…</string>
 </resources>
