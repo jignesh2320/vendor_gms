@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <bool name="dynamic_color_enabled">true</bool>
-    <bool name="extended_partner_config_enabled">true</bool>
-    <bool name="setup_design_header_auto_size_enabled">true</bool>
-    <bool name="setup_design_items_divider_shown">false</bool>
-
+<resources>
     <dimen name="setup_compat_footer_button_min_height">56.0dip</dimen>
     <dimen name="setup_compat_footer_button_padding_bottom">6.0dip</dimen>
     <dimen name="setup_compat_footer_button_padding_top">6.0dip</dimen>
@@ -38,19 +33,4 @@
     <dimen name="setup_design_items_title_text_size">20.0sp</dimen>
     <dimen name="setup_design_layout_margin_end">24.0dip</dimen>
     <dimen name="setup_design_layout_margin_start">40.0dip</dimen>
-
-    <integer name="setup_design_header_auto_size_max_line_of_max_size">2</integer>
-
-    <string name="demo_device_admin_component_name">com.google.android.retaildemo/.DemoDeviceAdminReceiver</string>
-    <string name="demo_device_admin_download_location">https://g.co/pixel/retaildemo</string>
-    <string name="demo_device_admin_signature_checksum">ZUfHPe4VDBA5gL_f_lXMmgEdeF3WlKX5mv2CBbyvH4A</string>
-    <string name="setup_compat_footer_button_font_family">google-sans-text-medium</string>
-    <string name="setup_design_content_font_family">google-sans-text</string>
-    <string name="setup_design_content_info_font_family">google-sans-text</string>
-    <string name="setup_design_description_font_family">google-sans-text</string>
-    <string name="setup_design_items_summary_font_family">google-sans-text</string>
-    <string name="setup_design_items_title_font_family">google-sans</string>
-    <string name="setup_design_layout_gravity">start</string>
-
-    <string name="exit_to_action_in_initial_setup">com.android.launcher3/com.android.quickstep.action.GESTURE_ONBOARDING_ALL_SET</string>
 </resources>

@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds.  Do not translate. -->
+<!--
+     Copyright (C) 2022 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Default value for Settings.ASSIST_LONG_PRESS_HOME_ENABLED -->
-    <bool name="config_assistLongPressHomeEnabledDefault">false</bool>
-    <!-- Default value for Settings.ASSIST_TOUCH_GESTURE_ENABLED -->
-    <bool name="config_assistTouchGestureEnabledDefault">false</bool>
+    <!-- Control the behavior when the user presses the power and volume up buttons together.
+            0 - Nothing
+            1 - Mute toggle
+            2 - Global actions menu
+    -->
+    <integer name="config_keyChordPowerVolumeUp">2</integer>
 
     <!-- Allow the gesture power + volume up to change the ringer mode while the device
          is interactive. -->
     <bool name="config_volumeHushGestureEnabled">false</bool>
+
+    <!-- Default value for Settings.ASSIST_LONG_PRESS_HOME_ENABLED -->
+    <bool name="config_assistLongPressHomeEnabledDefault">false</bool>
+
+    <!-- Default value for Settings.ASSIST_TOUCH_GESTURE_ENABLED -->
+    <bool name="config_assistTouchGestureEnabledDefault">false</bool>
 
     <!-- Control the default night mode to use when there is no other mode override set.
          One of the following values (see UiModeManager.java):
@@ -19,13 +29,6 @@
     -->
     <integer name="config_defaultNightMode">2</integer>
 
-    <!-- Control the behavior when the user presses the power and volume up buttons together.
-            0 - Nothing
-            1 - Mute toggle
-            2 - Global actions menu
-    -->
-    <integer name="config_keyChordPowerVolumeUp">2</integer>
-
     <!-- Control the behavior when the user long presses the power button.
             0 - Nothing
             1 - Global actions menu
@@ -33,6 +36,7 @@
             3 - Power off (without confirmation)
             4 - Go to voice assist
             5 - Go to assistant (Settings.Secure.ASSISTANT)
+            6 - Toggle torch on / off (if screen is off)
     -->
     <integer name="config_longPressOnPowerBehavior">5</integer>
 </resources>
