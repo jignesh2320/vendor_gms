@@ -458,6 +458,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.USE_RESERVED_DISK"/>
         <permission name="android.permission.USER_ACTIVITY"/>
         <permission name="android.permission.UWB_PRIVILEGED"/>
+        <permission name="android.permission.WRITE_DEVICE_CONFIG" />
         <permission name="android.permission.WRITE_GSERVICES"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
