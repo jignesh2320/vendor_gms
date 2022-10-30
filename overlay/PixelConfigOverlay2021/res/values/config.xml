@@ -16,7 +16,7 @@
 
     <!-- Allow the gesture power + volume up to change the ringer mode while the device
          is interactive. -->
-    <bool name="config_volumeHushGestureEnabled">false</bool>
+    <bool name="config_volumeHushGestureEnabled">true</bool>
 
     <!-- Default value for Settings.ASSIST_LONG_PRESS_HOME_ENABLED -->
     <bool name="config_assistLongPressHomeEnabledDefault">false</bool>
