@@ -1,4 +1,4 @@
-# All unpinned files are extracted from bluejay TP1A.220624.021.A1
+# All unpinned files are extracted from bluejay TP1A.221105.002
 
 # GMS mandatory core packages
 # GoogleCalendarSyncAdapter, not exisiting on pixel because it is overridden by CalendarGoogle
@@ -91,7 +91,7 @@ product/etc/sysconfig/pixel_2016_exclusive.xml|f4eeeeec14b22b913d865ba5895dcca9f
 -system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk;PRESIGNED
 -system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk;OVERRIDES=DocumentsUI;PRESIGNED
 
-# Google extension services (extracted from com.google.android.extservices.apex) - from bluejay TP1A.220624.021.A1
--system/priv-app/GoogleExtServices/GoogleExtServices.apk;OVERRIDES=ExtServices;PRESIGNED|975aa539192bbbe7f58f8e60fc8189fdfbfb5c0e
+# Google extension services (extracted from com.google.android.extservices.apex) - from bluejay TP1A.221105.002
+-system/priv-app/GoogleExtServices/GoogleExtServices.apk;OVERRIDES=ExtServices;PRESIGNED|718cafe72adea931b2f0ce21de66eee4444b4f43
 
 -product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk;PRESIGNED
