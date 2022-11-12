@@ -526,6 +526,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
         <permission name="android.permission.READ_DREAM_STATE"/>
         <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.RECORD_AUDIO"/>
         <permission name="android.permission.SET_MEDIA_KEY_LISTENER"/>
         <permission name="android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER"/>
         <permission name="android.permission.MANAGE_USB"/>
