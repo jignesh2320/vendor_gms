@@ -74,6 +74,7 @@ PRODUCT_PACKAGES += \
     Velvet \
     WellbeingPrebuilt \
     GoogleFeedback \
+    Flipendo \
     GoogleServicesFramework \
     PixelSetupWizard \
     com.google.android.dialer.support

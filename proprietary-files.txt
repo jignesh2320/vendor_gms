@@ -86,6 +86,7 @@ product/etc/sysconfig/pixel_2016_exclusive.xml|f4eeeeec14b22b913d865ba5895dcca9f
 -product/priv-app/DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk;PRESIGNED|c77ad00295b51fb1ef4ca42ca6e0e7acebb0ffa7
 -product/priv-app/FilesPrebuilt/FilesPrebuilt.apk;PRESIGNED
 -product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk;OVERRIDES=SettingsIntelligence;PRESIGNED
+-system_ext/app/Flipendo/Flipendo.apk
 -system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk;PRESIGNED
 -system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk;OVERRIDES=DocumentsUI;PRESIGNED
 
