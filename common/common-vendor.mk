@@ -72,6 +72,7 @@ PRODUCT_PACKAGES += \
     PrebuiltBugle \
     PrebuiltGmsCoreSc \
     AndroidPlatformServices \
+    SecurityHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     SetupWizardPrebuilt \
     TurboPrebuilt \
