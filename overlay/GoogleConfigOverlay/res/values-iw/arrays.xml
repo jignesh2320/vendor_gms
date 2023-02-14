@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <array name="face_acquired_vendor" />
+    <string-array name="face_error_vendor">
+        <item>תוקף האישור פג</item>
+        <item>החיישן מושבת באופן זמני</item>
+        <item>שגיאה בכיול</item>
+        <item>פתיחה ע\"י זיהוי הפנים לא זמינה. הטלפון חם מדי.</item>
+        <item>"יש להגדיר שוב את התכונה 'פתיחה ע\"י זיהוי הפנים'"</item>
+    </string-array>
+</resources>
