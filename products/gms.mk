@@ -28,6 +28,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     GoogleConfigOverlay \
     GoogleSettingsOverlay \
+    NexusLauncherOverlay \
     PixelConfigOverlay2018 \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
