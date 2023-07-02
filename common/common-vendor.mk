@@ -39,8 +39,8 @@ PRODUCT_PACKAGES += \
     TagGoogle \
     CalculatorGooglePrebuilt \
     CalendarGooglePrebuilt \
-    Chrome-Stub \
     Drive \
+    Chrome-Stub \
     GoogleContacts \
     GoogleTTS \
     LatinIMEGooglePrebuilt \

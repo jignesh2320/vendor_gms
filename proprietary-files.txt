@@ -1,4 +1,4 @@
-# All unpinned files are extracted from bluejay TP1A.221105.002
+# All unpinned files are extracted from cheetah TQ3A.230605.012
 
 # GMS mandatory core packages
 # GoogleCalendarSyncAdapter, not exisiting on pixel because it is overridden by CalendarGoogle
